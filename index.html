@@ -1,0 +1,1403 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cron 任务报告</title>
+<style>
+  body { font-family: -apple-system, "PingFang SC", sans-serif; background:#0f1115; color:#e5e7eb; margin:0; padding:16px; }
+  h1 { font-size:20px; }
+  .sub { color:#9ca3af; font-size:12px; margin-bottom:16px; }
+  details.job { background:#1a1d24; border:1px solid #2a2e37; border-radius:8px; margin-bottom:10px; padding:10px 14px; }
+  summary { cursor:pointer; display:flex; align-items:center; gap:10px; flex-wrap:wrap; }
+  .job-name { font-weight:600; }
+  .job-meta { color:#9ca3af; font-size:12px; }
+  .job-last { color:#6b7280; font-size:12px; margin-left:auto; }
+  .badge { color:#fff; border-radius:4px; padding:1px 8px; font-size:11px; }
+  .err { background:#3a1416; border:1px solid #7f1d1d; color:#fca5a5; border-radius:6px; padding:8px; margin:8px 0; font-size:12px; }
+  .runs { margin-top:10px; }
+  details { border-top:1px solid #2a2e37; padding:6px 0; }
+  summary { font-size:13px; color:#9ca3af; }
+  .run-body { background:#0b0d11; border:1px solid #23262e; border-radius:6px; padding:10px; margin:6px 0; font-size:13px; }
+  .run-body pre { white-space:pre-wrap; overflow-x:auto; }
+  .run-body h1,.run-body h2 { font-size:15px; }
+  code { background:#23262e; padding:1px 5px; border-radius:3px; font-size:12px; }
+  a { color:#60a5fa; }
+</style>
+</head>
+<body>
+<h1>📊 Cron 任务执行报告</h1>
+<div class="sub">生成时间: 2026-07-31 21:06:10 | ✅=送达成功 ❌=微信送达失败 | 点击任务展开每次执行详情</div>
+
+<details class="job" open>
+  <summary>
+    <span class="job-name">美股趋势动量-21:00信号</span>
+    <span class="job-meta">0 21 * * 1-5</span>
+    <span class="badge" style="background:#16a34a">ok</span>
+    ✅
+    <span class="job-last">2026-07-31T21:00</span>
+  </summary>
+  <div class="job-detail">
+    
+    <div class="runs"><details><summary><code>2026-07-31_21-00-45</code> </summary><div class="run-body"><p>🇺🇸 美股趋势动量 | 2026-07-30
+策略: MA50入场 + 63日动量 &gt; 0, 前3只, 跌破MA50卖出
+🟢 买入 CRWD @ $185.22 × 154股 ($28,524)
+   MA50溢价 +2.5% | 63日动量 +63.8%</p>
+<p>📊 当前持仓 (3只):
+   🟢 SNOW   121股 | 成本 $271.87 | 现价 $298.10 | +9.65%
+   🔴 AAPL   96股 | 成本 $333.74 | 现价 $333.43 | -0.09%
+   🔴 CRWD   154股 | 成本 $185.22 | 现价 $185.22 | +0.00%</p>
+<p>💰 现金: $116
+📈 总资产: $96,720 | 累计: -3.28%</p>
+<p>────────────────
+📋 今日操作一览
+   🟢 买入 CRWD   @ $185.22 × 154股 ($28,524) | 理由: MA50溢价+2.5%, 63日动量+63.8%</p></div></details><details><summary><code>2026-07-30_21-00-47</code> </summary><div class="run-body"><p>🇺🇸 美股趋势动量 | 2026-07-29
+策略: MA50入场 + 63日动量 &gt; 0, 前3只, 跌破MA50卖出
+🔴 卖出 CRWD
+   买入 206.77 → 卖出 179.38
+   盈亏 -4355.01 (-13.25%)
+   原因: 跌破MA50</p>
+<p>📊 当前持仓 (2只):
+   🟢 SNOW   121股 | 成本 $271.87 | 现价 $282.90 | +4.06%
+   🟢 AAPL   96股 | 成本 $333.74 | 现价 $338.19 | +1.33%</p>
+<p>💰 现金: $28,640
+📈 总资产: $95,337 | 累计: -4.66%</p>
+<p>────────────────
+📋 今日操作一览
+   🔴 卖出 CRWD   @ $179.38 | 🔴 -4355.01 (-13.25%) | 理由: 收盘价跌破MA50</p></div></details><details><summary><code>2026-07-29_21-00-52</code> </summary><div class="run-body"><p>🇺🇸 美股趋势动量 | 2026-07-28
+策略: MA50入场 + 63日动量 &gt; 0, 前3只, 跌破MA50卖出</p>
+<p>📊 当前持仓 (3只):
+   🔴 CRWD   159股 | 成本 $206.77 | 现价 $181.80 | -12.08%
+   🔴 SNOW   121股 | 成本 $271.87 | 现价 $270.36 | -0.56%
+   🟢 AAPL   96股 | 成本 $333.74 | 现价 $340.08 | +1.90%</p>
+<p>💰 现金: $119
+📈 总资产: $94,386 | 累计: -5.61%</p></div></details><details><summary><code>2026-07-28_21-00-47</code> </summary><div class="run-body"><p>🇺🇸 美股趋势动量 | 2026-07-27
+策略: MA50入场 + 63日动量 &gt; 0, 前3只, 跌破MA50卖出</p>
+<p>📊 当前持仓 (3只):
+   🔴 CRWD   159股 | 成本 $206.77 | 现价 $180.11 | -12.89%
+   🟢 SNOW   121股 | 成本 $271.87 | 现价 $272.92 | +0.39%
+   🟢 AAPL   96股 | 成本 $333.74 | 现价 $336.91 | +0.95%</p>
+<p>💰 现金: $119
+📈 总资产: $94,123 | 累计: -5.88%</p></div></details><details><summary><code>2026-07-27_22-03-11</code> </summary><div class="run-body"><p>🇺🇸 美股趋势动量 | 2026-07-24
+策略: MA50入场 + 63日动量 &gt; 0, 前3只, 跌破MA50卖出</p>
+<p>📊 当前持仓 (3只):
+   🔴 CRWD   159股 | 成本 $206.77 | 现价 $183.28 | -11.36%
+   🔴 SNOW   121股 | 成本 $271.87 | 现价 $268.06 | -1.40%
+   🔴 AAPL   96股 | 成本 $333.74 | 现价 $333.02 | -0.22%</p>
+<p>💰 现金: $119
+📈 总资产: $93,665 | 累计: -6.33%</p></div></details><details><summary><code>2026-07-24_21-45-54</code> </summary><div class="run-body"><p>🇺🇸 美股趋势动量 | 2026-07-23
+策略: MA50入场 + 63日动量 &gt; 0, 前3只, 跌破MA50卖出</p>
+<p>📊 当前持仓 (3只):
+   🔴 CRWD   159股 | 成本 $206.77 | 现价 $183.42 | -11.29%
+   🔴 SNOW   121股 | 成本 $271.87 | 现价 $265.13 | -2.48%
+   🔴 AAPL   96股 | 成本 $333.74 | 现价 $321.66 | -3.62%</p>
+<p>💰 现金: $119
+📈 总资产: $92,243 | 累计: -7.76%</p></div></details><details><summary><code>2026-07-23_21-04-08</code> </summary><div class="run-body"><p>🇺🇸 美股趋势动量 | 2026-07-22
+策略: MA50入场 + 63日动量 &gt; 0, 前3只, 跌破MA50卖出</p>
+<p>📊 当前持仓 (3只):
+   🔴 CRWD   159股 | 成本 $206.77 | 现价 $188.42 | -8.87%
+   🔴 SNOW   121股 | 成本 $271.87 | 现价 $267.80 | -1.50%
+   🔴 AAPL   96股 | 成本 $333.74 | 现价 $325.89 | -2.35%</p>
+<p>💰 现金: $119
+📈 总资产: $93,767 | 累计: -6.23%</p></div></details><details><summary><code>2026-07-22_21-10-15</code> </summary><div class="run-body"><p>🇺🇸 美股趋势动量 | 2026-07-21
+策略: MA50入场 + 63日动量 &gt; 0, 前3只, 跌破MA50卖出</p>
+<p>📊 当前持仓 (3只):
+   🔴 CRWD   159股 | 成本 $206.77 | 现价 $191.15 | -7.55%
+   🔴 SNOW   121股 | 成本 $271.87 | 现价 $271.73 | -0.05%
+   🔴 AAPL   96股 | 成本 $333.74 | 现价 $327.74 | -1.80%</p>
+<p>💰 现金: $119
+📈 总资产: $94,854 | 累计: -5.15%</p></div></details><details><summary><code>2026-07-21_21-20-57</code> </summary><div class="run-body"><p>🇺🇸 美股趋势动量 | 2026-07-17
+策略: MA50入场 + 63日动量 &gt; 0, 前3只, 跌破MA50卖出</p>
+<p>📊 当前持仓 (3只):
+   🔴 CRWD   159股 | 成本 $206.77 | 现价 $203.08 | -1.78%
+   🔴 SNOW   121股 | 成本 $271.87 | 现价 $268.90 | -1.09%
+   🔴 AAPL   96股 | 成本 $333.74 | 现价 $333.74 | +0.00%</p>
+<p>💰 现金: $119
+📈 总资产: $96,984 | 累计: -3.02%</p></div></details><details><summary><code>2026-07-20_21-00-50</code> </summary><div class="run-body"><p>🇺🇸 美股趋势动量 | 2026-07-17
+策略: MA50入场 + 63日动量 &gt; 0, 前3只, 跌破MA50卖出
+🔴 卖出 AMD
+   买入 529.14 → 卖出 495.76
+   盈亏 -2069.56 (-6.31%)
+   原因: 跌破MA50
+🟢 买入 AAPL @ $333.74 × 96股 ($32,039)
+   MA50溢价 +10.3% | 63日动量 +26.8%</p>
+<p>📊 当前持仓 (3只):
+   🔴 CRWD   159股 | 成本 $206.77 | 现价 $203.08 | -1.78%
+   🔴 SNOW   121股 | 成本 $271.87 | 现价 $268.90 | -1.09%
+   🔴 AAPL   96股 | 成本 $333.74 | 现价 $333.74 | +0.00%</p>
+<p>💰 现金: $119
+📈 总资产: $96,984 | 累计: -3.02%</p>
+<p>────────────────
+📋 今日操作一览
+   🔴 卖出 AMD    @ $495.76 | 🔴 -2069.56 (-6.31%) | 理由: 收盘价跌破MA50
+   🟢 买入 AAPL   @ $333.74 × 96股 ($32,039) | 理由: MA50溢价+10.3%, 63日动量+26.8%</p></div></details><details><summary><code>2026-07-17_21-23-30</code> </summary><div class="run-body"><p>🇺🇸 美股趋势动量 | 2026-07-15
+策略: MA50入场 + 63日动量 &gt; 0, 前3只, 跌破MA50卖出</p>
+<p>📊 当前持仓 (3只):
+   🔴 CRWD   159股 | 成本 $206.77 | 现价 $206.77 | +0.00%
+   🔴 AMD    62股 | 成本 $529.14 | 现价 $529.14 | +0.00%
+   🔴 SNOW   121股 | 成本 $271.87 | 现价 $271.87 | +0.00%</p>
+<p>💰 现金: $1,421
+📈 总资产: $100,000 | 累计: +0.00%</p></div></details><details><summary><code>2026-07-16_21-19-07</code> </summary><div class="run-body"><p>🇺🇸 美股趋势动量 | 2026-07-15
+策略: MA50入场 + 63日动量 &gt; 0, 前3只, 跌破MA50卖出
+🟢 买入 CRWD @ $206.77 × 159股 ($32,876)
+   MA50溢价 +22.7% | 63日动量 +107.6%
+🟢 买入 AMD @ $529.14 × 62股 ($32,807)
+   MA50溢价 +7.3% | 63日动量 +107.4%
+🟢 买入 SNOW @ $271.87 × 121股 ($32,896)
+   MA50溢价 +24.7% | 63日动量 +100.7%</p>
+<p>📊 当前持仓 (3只):
+   🔴 CRWD   159股 | 成本 $206.77 | 现价 $206.77 | +0.00%
+   🔴 AMD    62股 | 成本 $529.14 | 现价 $529.14 | +0.00%
+   🔴 SNOW   121股 | 成本 $271.87 | 现价 $271.87 | +0.00%</p>
+<p>💰 现金: $1,421
+📈 总资产: $100,000 | 累计: +0.00%</p></div></details><details><summary><code>2026-07-16_21-00-59</code> </summary><div class="run-body"><p>🇺🇸 美股趋势动量 | 2026-07-15
+策略: MA50入场 + 63日动量 &gt; 0, 前3只, 跌破MA50卖出</p>
+<p>📊 当前持仓 (3只):
+   🟢 SNOW   | 成本 $268.65 | 现价 $271.87 | +1.20%
+   🔴 AMD    | 成本 $534.39 | 现价 $529.14 | -0.98%
+   🟢 CRWD   | 成本 $187.91 | 现价 $206.77 | +10.04%</p>
+<p>💰 现金: $90,090
+📈 总资产: $100,168 | 累计: +0.17%</p></div></details><details><summary><code>2026-07-15_21-00-48</code> </summary><div class="run-body"><p>🇺🇸 美股趋势动量 | 2026-07-14
+策略: MA50入场 + 63日动量 &gt; 0, 前3只, 跌破MA50卖出</p>
+<p>📊 当前持仓 (3只):
+   🟢 SNOW   | 成本 $268.65 | 现价 $275.94 | +2.71%
+   🟢 AMD    | 成本 $534.39 | 现价 $548.13 | +2.57%
+   🟢 CRWD   | 成本 $187.91 | 现价 $210.73 | +12.14%</p>
+<p>💰 现金: $90,090
+📈 总资产: $100,438 | 累计: +0.44%</p></div></details><details><summary><code>2026-07-14_23-13-27</code> </summary><div class="run-body"><p>🇺🇸 美股趋势动量 | 2026-07-13
+策略: MA50入场 + 63日动量 &gt; 0, 前3只, 跌破MA50卖出</p>
+<p>📊 当前持仓 (3只):
+   🔴 SNOW   | 成本 $268.65 | 现价 $268.65 | +0.00%
+   🔴 AMD    | 成本 $534.39 | 现价 $534.39 | +0.00%
+   🔴 CRWD   | 成本 $187.91 | 现价 $187.91 | +0.00%</p>
+<p>💰 现金: $90,090
+📈 总资产: $100,000 | 累计: +0.00%</p></div></details></div>
+  </div>
+</details>
+<details class="job" open>
+  <summary>
+    <span class="job-name">模拟持仓-14:50卖出</span>
+    <span class="job-meta">50 14 * * 1-5</span>
+    <span class="badge" style="background:#16a34a">ok</span>
+    ✅
+    <span class="job-last">2026-07-31T20:05</span>
+  </summary>
+  <div class="job-detail">
+    
+    <div class="runs"><details><summary><code>2026-07-31_20-05-46</code> </summary><div class="run-body"><p>📉 A股模拟卖出 | 2026-07-31</p>
+<p>📊 当前持仓 (5只):
+   🟢 三花智控     002050  4500股 | 成本 35.58 | 现价 37.53 | +5.48%
+   🟡 中际旭创     300308  200股 | 成本 951.00 | 现价 902.01 | -5.15%
+   🟡 新易盛      300502  400股 | 成本 421.20 | 现价 396.01 | -5.98%
+   🟡 工业富联     601138  3400股 | 成本 57.75 | 现价 56.70 | -1.82%
+   🟢 润泽科技     300442  2800股 | 成本 57.90 | 现价 63.25 | +9.24%</p>
+<p>💰 现金: ¥1
+📈 总资产: ¥877,572 | 累计: -12.24%</p></div></details><details><summary><code>2026-07-31_14-50-43</code> </summary><div class="run-body"><p>📉 A股模拟卖出 | 2026-07-31</p>
+<p>📊 当前持仓 (5只):
+   🟢 三花智控     002050  4500股 | 成本 35.58 | 现价 37.53 | +5.48%
+   🟡 中际旭创     300308  200股 | 成本 951.00 | 现价 904.96 | -4.84%
+   🟡 新易盛      300502  400股 | 成本 421.20 | 现价 398.18 | -5.47%
+   🟡 工业富联     601138  3400股 | 成本 57.75 | 现价 56.65 | -1.90%
+   🟢 润泽科技     300442  2800股 | 成本 57.90 | 现价 63.11 | +9.00%</p>
+<p>💰 现金: ¥1
+📈 总资产: ¥878,468 | 累计: -12.15%</p></div></details><details><summary><code>2026-07-30_14-51-01</code> </summary><div class="run-body"><p>📉 A股模拟卖出 | 2026-07-30</p>
+<p>📊 当前持仓 (4只):
+   🟡 三花智控     002050  4500股 | 成本 35.58 | 现价 35.49 | -0.25%
+   🟡 中际旭创     300308  200股 | 成本 951.00 | 现价 877.50 | -7.73%
+   🔴 新易盛      300502  400股 | 成本 421.20 | 现价 375.99 | -10.73%
+   🟡 工业富联     601138  3400股 | 成本 57.75 | 现价 53.80 | -6.84%</p>
+<p>💰 现金: ¥162,170
+📈 总资产: ¥830,691 | 累计: -16.93%</p></div></details><details><summary><code>2026-07-29_21-25-07</code> </summary><div class="run-body"><p>📉 A股模拟卖出 | 2026-07-29
+🔴 卖出 工业富联 601138
+   买入 63.02 → 卖出 57.75
+   盈亏 -16569.73 (-8.36%)
+   原因: 不在候选列表 (候选日期: 2026-07-29)
+🟢 卖出 北方华创 002371
+   买入 702.76 → 卖出 706.39
+   盈亏 +542.34 (+0.52%)
+   原因: 不在候选列表 (候选日期: 2026-07-29)
+🔴 卖出 中际旭创 300308
+   买入 1004.00 → 卖出 951.00
+   盈亏 -5423.63 (-5.28%)
+   原因: 不在候选列表 (候选日期: 2026-07-29)
+🔴 卖出 润泽科技 300442
+   买入 68.58 → 卖出 60.72
+   盈亏 -17465.66 (-11.46%)
+   原因: 不在候选列表 (候选日期: 2026-07-29)
+🔴 卖出 澜起科技 688008
+   买入 227.45 → 卖出 207.50
+   盈亏 -16175.80 (-8.77%)
+   原因: 不在候选列表 (候选日期: 2026-07-29)</p>
+<p>📊 当前持仓 (1只):
+   🟢 三花智控     002050  4500股 | 成本 35.58 | 现价 36.02 | +1.24%</p>
+<p>💰 现金: ¥717,366
+📈 总资产: ¥879,456 | 累计: -12.05%</p></div></details><details><summary><code>2026-07-29_14-50-33</code> </summary><div class="run-body"><p>服务器连接失败，请稍后再试。
+[Errno 57] Socket is not connected
+接收数据异常，请稍后再试。
+[Errno 57] Socket is not connected
+接收数据异常，请稍后再试。
+[Errno 57] Socket is not connected
+接收数据异常，请稍后再试。
+[Errno 57] Socket is not connected
+接收数据异常，请稍后再试。
+[Errno 57] Socket is not connected
+接收数据异常，请稍后再试。
+[Errno 57] Socket is not connected
+接收数据异常，请稍后再试。
+[Errno 57] Socket is not connected
+接收数据异常，请稍后再试。
+[Errno 57] Socket is not connected
+接收数据异常，请稍后再试。
+📉 A股模拟卖出 | 2026-07-29
+⚠️ 601138 工业富联 价格缺失，跳过
+⚠️ 002371 北方华创 价格缺失，跳过
+⚠️ 300308 中际旭创 价格缺失，跳过
+⚠️ 300442 润泽科技 价格缺失，跳过
+⚠️ 688008 澜起科技 价格缺失，跳过</p>
+<p>📊 当前持仓 (6只):
+   ⚠️ 工业富联     601138  | 价格缺失
+   ⚠️ 北方华创     002371  | 价格缺失
+   ⚠️ 中际旭创     300308  | 价格缺失
+   ⚠️ 润泽科技     300442  | 价格缺失
+   ⚠️ 澜起科技     688008  | 价格缺失
+   ⚠️ 三花智控     002050  | 价格缺失</p>
+<p>💰 现金: ¥3,309
+📈 总资产: ¥3,309 | 累计: -99.67%</p></div></details><details><summary><code>2026-07-28_14-51-00</code> </summary><div class="run-body"><p>📉 A股模拟卖出 | 2026-07-28
+🔴 卖出 新易盛 300502
+   买入 510.00 → 卖出 410.56
+   盈亏 -29992.12 (-19.50%)
+   原因: 止损 -10% (-19.50%)</p>
+<p>📊 当前持仓 (5只):
+   🟡 工业富联     601138  3100股 | 成本 63.02 | 现价 58.28 | -7.52%
+   🟢 北方华创     002371  200股 | 成本 702.76 | 现价 718.66 | +2.26%
+   🟡 中际旭创     300308  100股 | 成本 1004.00 | 现价 913.06 | -9.06%
+   🟡 润泽科技     300442  2200股 | 成本 68.58 | 现价 63.40 | -7.55%
+   🟡 澜起科技     688008  800股 | 成本 227.45 | 现价 208.17 | -8.48%</p>
+<p>💰 现金: ¥163,467
+📈 总资产: ¥885,189 | 累计: -11.48%</p></div></details><details><summary><code>2026-07-27_14-50-07</code> </summary><div class="run-body"><p>📉 A股模拟卖出 | 2026-07-27
+🟢 卖出 宁德时代 300750
+   买入 360.00 → 卖出 400.38
+   盈亏 +19929.75 (+11.22%)
+   原因: 不在候选列表 (候选日期: 2026-07-27)
+🔴 卖出 比亚迪 002594
+   买入 93.47 → 卖出 92.25
+   盈亏 -267.99 (-1.31%)
+   原因: 不在候选列表 (候选日期: 2026-07-27)</p>
+<p>📊 当前持仓 (5只):
+   🟡 工业富联     601138  3100股 | 成本 63.02 | 现价 61.34 | -2.67%
+   🟢 北方华创     002371  200股 | 成本 702.76 | 现价 768.86 | +9.41%
+   🟢 中际旭创     300308  100股 | 成本 1004.00 | 现价 1070.91 | +6.66%
+   🟡 新易盛      300502  300股 | 成本 510.00 | 现价 491.00 | -3.73%
+   🟡 润泽科技     300442  2200股 | 成本 68.58 | 现价 66.22 | -3.44%</p>
+<p>💰 现金: ¥222,473
+📈 总资产: ¥966,474 | 累计: -3.35%</p></div></details><details><summary><code>2026-07-24_14-56-32</code> </summary><div class="run-body"><p>📉 A股模拟卖出 | 2026-07-24</p>
+<p>📊 当前持仓 (7只):
+   🟡 工业富联     601138  3100股 | 成本 63.02 | 现价 60.25 | -4.40%
+   🟢 北方华创     002371  200股 | 成本 702.76 | 现价 757.00 | +7.72%
+   🟢 宁德时代     300750  500股 | 成本 360.00 | 现价 383.01 | +6.39%
+   🟡 比亚迪      002594  200股 | 成本 93.47 | 现价 91.89 | -1.69%
+   🟢 中际旭创     300308  100股 | 成本 1004.00 | 现价 1046.51 | +4.23%
+   🟡 新易盛      300502  300股 | 成本 510.00 | 现价 476.02 | -6.66%
+   🟡 润泽科技     300442  2200股 | 成本 68.58 | 现价 64.80 | -5.51%</p>
+<p>💰 现金: ¥4,118
+📈 总资产: ¥942,193 | 累计: -5.78%</p></div></details><details><summary><code>2026-07-23_14-50-32</code> </summary><div class="run-body"><p>📉 A股模拟卖出 | 2026-07-23</p>
+<p>📊 当前持仓 (7只):
+   🟡 工业富联     601138  3100股 | 成本 63.02 | 现价 62.89 | -0.21%
+   🟢 北方华创     002371  200股 | 成本 702.76 | 现价 740.80 | +5.41%
+   🟢 宁德时代     300750  500股 | 成本 360.00 | 现价 385.69 | +7.14%
+   🟡 比亚迪      002594  200股 | 成本 93.47 | 现价 92.69 | -0.83%
+   🟢 中际旭创     300308  100股 | 成本 1004.00 | 现价 1073.00 | +6.87%
+   🟡 新易盛      300502  300股 | 成本 510.00 | 现价 498.69 | -2.22%
+   🟡 润泽科技     300442  2200股 | 成本 68.58 | 现价 67.77 | -1.18%</p>
+<p>💰 现金: ¥4,118
+📈 总资产: ¥964,621 | 累计: -3.54%</p></div></details><details><summary><code>2026-07-22_14-50-44</code> </summary><div class="run-body"><p>📉 A股模拟卖出 | 2026-07-22</p>
+<p>📊 当前持仓 (6只):
+   🟡 工业富联     601138  3100股 | 成本 63.02 | 现价 60.71 | -3.67%
+   🟢 北方华创     002371  200股 | 成本 702.76 | 现价 762.52 | +8.50%
+   🟢 宁德时代     300750  500股 | 成本 360.00 | 现价 371.89 | +3.30%
+   🟡 比亚迪      002594  200股 | 成本 93.47 | 现价 91.66 | -1.94%
+   🟢 中际旭创     300308  100股 | 成本 1004.00 | 现价 1062.50 | +5.83%
+   🟡 新易盛      300502  300股 | 成本 510.00 | 现价 508.11 | -0.37%</p>
+<p>💰 现金: ¥155,039
+📈 总资产: ¥958,704 | 累计: -4.13%</p></div></details><details><summary><code>2026-07-21_14-50-25</code> </summary><div class="run-body"><p>📉 A股模拟卖出 | 2026-07-21
+⚠️ 601138 工业富联 价格缺失，跳过
+⚠️ 002371 北方华创 价格缺失，跳过
+⚠️ 300750 宁德时代 价格缺失，跳过
+⚠️ 002594 比亚迪 价格缺失，跳过</p>
+<p>📊 当前持仓 (6只):
+   ⚠️ 工业富联     601138  | 价格缺失
+   ⚠️ 北方华创     002371  | 价格缺失
+   ⚠️ 宁德时代     300750  | 价格缺失
+   ⚠️ 比亚迪      002594  | 价格缺失
+   ⚠️ 中际旭创     300308  | 价格缺失
+   ⚠️ 新易盛      300502  | 价格缺失</p>
+<p>💰 现金: ¥155,039
+📈 总资产: ¥155,039 | 累计: -84.50%</p></div></details><details><summary><code>2026-07-20_14-51-13</code> </summary><div class="run-body"><p>login success!
+logout success!
+login success!
+logout success!
+login success!
+logout success!
+login success!
+logout success!
+login success!
+logout success!
+login success!
+logout success!
+login success!
+logout success!
+login success!
+logout success!
+login success!
+logout success!
+login success!
+logout success!
+login success!
+logout success!
+login success!
+logout success!
+login success!
+logout success!
+login success!
+logout success!
+📉 A股模拟卖出 | 2026-07-20
+🔴 卖出 中际旭创 300308
+   买入 1113.00 → 卖出 979.46
+   盈亏 -13481.33 (-12.00%)
+   原因: 止损 -10% (-12.00%)
+🔴 卖出 新易盛 300502
+   买入 542.60 → 卖出 482.88
+   盈亏 -18104.32 (-11.01%)
+   原因: 止损 -10% (-11.01%)
+🔴 卖出 澜起科技 688008
+   买入 211.13 → 卖出 183.60
+   盈亏 -24991.81 (-13.04%)
+   原因: 止损 -10% (-13.04%)</p>
+<p>📊 当前持仓 (4只):
+   🟡 工业富联     601138  3100股 | 成本 63.02 | 现价 57.59 | -8.62%
+   🟡 北方华创     002371  200股 | 成本 702.76 | 现价 677.00 | -3.67%
+   🟡 宁德时代     300750  500股 | 成本 360.00 | 现价 360.00 | +0.00%
+   🟡 比亚迪      002594  200股 | 成本 93.47 | 现价 93.47 | +0.00%</p>
+<p>💰 现金: ¥408,515
+📈 总资产: ¥921,138 | 累计: -7.89%</p></div></details><details><summary><code>2026-07-17_21-23-33</code> <span class="badge" style="background:#dc2626">script failed</span></summary><div class="run-body"><h1>Cron Job: 模拟持仓-14:50卖出</h1>
+<p><strong>Job ID:</strong> 9d3ab12cbab2
+<strong>Run Time:</strong> 2026-07-17 21:23:33
+<strong>Mode:</strong> no_agent (script)
+<strong>Status:</strong> script failed</p>
+<p>Script timed out after 3600s: /Users/wangjing/.hermes/scripts/sell_a_share.sh</p></div></details><details><summary><code>2026-07-16_21-04-07</code> </summary><div class="run-body"><p>login success!
+logout success!
+login success!
+logout success!
+login success!
+logout success!
+📉 A股模拟卖出 | 2026-07-16</p>
+<p>📊 当前持仓 (3只):
+   🟢 新易盛      300502  1000股 | 成本 515.00 | 现价 542.60 | +5.36%
+   🟡 工业富联     601138  1000股 | 成本 65.00 | 现价 63.02 | -3.05%
+   🟡 澜起科技     688008  1000股 | 成本 211.13 | 现价 211.13 | +0.00%</p>
+<p>💰 现金: ¥199,947
+📈 总资产: ¥1,016,697 | 累计: +1.67%</p></div></details><details><summary><code>2026-07-16_20-57-54</code> </summary><div class="run-body"><p>login success!
+logout success!
+login success!
+logout success!
+login success!
+logout success!
+📉 A股模拟卖出 | 2026-07-16</p>
+<p>📊 当前持仓 (3只):
+   🟢 新易盛      300502  | 成本 515.00 | 现价 542.60 | +5.36%
+   🟡 工业富联     601138  | 成本 65.00 | 现价 63.02 | -3.05%
+   🟡 澜起科技     688008  | 成本 211.13 | 现价 211.13 | +0.00%</p>
+<p>💰 现金: ¥199,947
+📈 总资产: ¥1,016,697 | 累计: +1.67%</p></div></details></div>
+  </div>
+</details>
+<details class="job" open>
+  <summary>
+    <span class="job-name">模拟持仓-09:30买入</span>
+    <span class="job-meta">30 9 * * 1-5</span>
+    <span class="badge" style="background:#16a34a">ok</span>
+    ✅
+    <span class="job-last">2026-07-31T20:05</span>
+  </summary>
+  <div class="job-detail">
+    
+    <div class="runs"><details><summary><code>2026-07-31_20-05-35</code> </summary><div class="run-body"><p>login success!
+logout success!
+CRON_SILENT</p></div></details><details><summary><code>2026-07-31_09-30-14</code> </summary><div class="run-body"><p>login success!
+logout success!
+login success!
+logout success!
+login success!
+logout success!
+login success!
+logout success!
+📈 A股模拟买入 | 2026-07-31
+🟢 买入 润泽科技 300442 @ 57.90 × 2800股
+   ai_datacenter_compute | 候选排名 #4 | 评分 1.40</p>
+<p>📊 当前持仓 (5只):
+   🟡 三花智控     002050  4500股 | 成本 35.58 | 现价 35.49 | -0.25%
+   🟡 中际旭创     300308  200股 | 成本 951.00 | 现价 877.50 | -7.73%
+   🔴 新易盛      300502  400股 | 成本 421.20 | 现价 375.99 | -10.73%
+   🟡 工业富联     601138  3400股 | 成本 57.75 | 现价 53.80 | -6.84%
+   🟡 润泽科技     300442  2800股 | 成本 57.90 | 现价 57.90 | +0.00%</p>
+<p>💰 剩余现金: ¥1
+📈 总资产: ¥830,642 | 累计: -16.94%</p></div></details><details><summary><code>2026-07-30_09-30-37</code> </summary><div class="run-body"><p>login success!
+logout success!
+login success!
+logout success!
+login success!
+logout success!
+login success!
+logout success!
+login success!
+logout success!
+login success!
+logout success!
+📈 A股模拟买入 | 2026-07-30
+🟢 买入 中际旭创 300308 @ 951.00 × 200股
+   ai_datacenter_compute,ai_optical_cpo | 候选排名 #1 | 评分 9.60
+🟢 买入 新易盛 300502 @ 421.20 × 400股
+   ai_datacenter_compute,ai_optical_cpo | 候选排名 #2 | 评分 9.10
+🟢 买入 工业富联 601138 @ 57.75 × 3400股
+   ai_datacenter_compute,ai_optical_cpo | 候选排名 #3 | 评分 7.74</p>
+<p>📊 当前持仓 (4只):
+   🟢 三花智控     002050  4500股 | 成本 35.58 | 现价 36.02 | +1.24%
+   🟡 中际旭创     300308  200股 | 成本 951.00 | 现价 951.00 | +0.00%
+   🟡 新易盛      300502  400股 | 成本 421.20 | 现价 421.20 | +0.00%
+   🟡 工业富联     601138  3400股 | 成本 57.75 | 现价 57.75 | +0.00%</p>
+<p>💰 剩余现金: ¥162,170
+📈 总资产: ¥879,290 | 累计: -12.07%</p></div></details><details><summary><code>2026-07-29_09-31-02</code> </summary><div class="run-body"><p>login success!
+logout success!
+login success!
+logout success!
+login success!
+logout success!
+login success!
+logout success!
+login success!
+logout success!
+login success!
+logout success!
+📈 A股模拟买入 | 2026-07-29
+🟢 买入 三花智控 002050 @ 35.58 × 4500股
+   ev_battery_autonomy,robotics_automation | 候选排名 #1 | 评分 3.02</p>
+<p>📊 当前持仓 (6只):
+   🟡 工业富联     601138  3100股 | 成本 63.02 | 现价 58.28 | -7.52%
+   🟢 北方华创     002371  200股 | 成本 702.76 | 现价 718.66 | +2.26%
+   🟡 中际旭创     300308  100股 | 成本 1004.00 | 现价 913.06 | -9.06%
+   🟡 润泽科技     300442  2200股 | 成本 68.58 | 现价 63.40 | -7.55%
+   🟡 澜起科技     688008  800股 | 成本 227.45 | 现价 208.17 | -8.48%
+   🟡 三花智控     002050  4500股 | 成本 35.58 | 现价 35.58 | +0.00%</p>
+<p>💰 剩余现金: ¥3,309
+📈 总资产: ¥885,141 | 累计: -11.49%</p></div></details><details><summary><code>2026-07-28_09-30-31</code> </summary><div class="run-body"><p>login success!
+logout success!
+login success!
+logout success!
+📈 A股模拟买入 | 2026-07-28
+🟢 买入 澜起科技 688008 @ 227.45 × 800股
+   semiconductor_equipment_chip | 候选排名 #5 | 评分 1.87</p>
+<p>📊 当前持仓 (6只):
+   🟡 工业富联     601138  3100股 | 成本 63.02 | 现价 61.34 | -2.67%
+   🟢 北方华创     002371  200股 | 成本 702.76 | 现价 768.86 | +9.41%
+   🟢 中际旭创     300308  100股 | 成本 1004.00 | 现价 1070.91 | +6.66%
+   🟡 新易盛      300502  300股 | 成本 510.00 | 现价 491.00 | -3.73%
+   🟡 润泽科技     300442  2200股 | 成本 68.58 | 现价 66.22 | -3.44%
+   🟡 澜起科技     688008  800股 | 成本 227.45 | 现价 227.45 | +0.00%</p>
+<p>💰 剩余现金: ¥40,459
+📈 总资产: ¥966,420 | 累计: -3.36%</p></div></details><details><summary><code>2026-07-27_09-30-41</code> </summary><div class="run-body"><p>login success!
+logout success!
+login success!
+logout success!
+CRON_SILENT</p></div></details><details><summary><code>2026-07-24_11-15-04</code> </summary><div class="run-body"><p>login success!
+logout success!
+login success!
+logout success!
+CRON_SILENT</p></div></details><details><summary><code>2026-07-24_09-41-32</code> </summary><div class="run-body"><p>login success!
+logout success!
+login success!
+logout success!
+CRON_SILENT</p></div></details><details><summary><code>2026-07-23_09-30-04</code> </summary><div class="run-body"><p>login success!
+logout success!
+login success!
+logout success!
+📈 A股模拟买入 | 2026-07-23
+🟢 买入 润泽科技 300442 @ 68.58 × 2200股
+   ai_datacenter_compute | 候选排名 #5 | 评分 5.92</p>
+<p>📊 当前持仓 (7只):
+   🟡 工业富联     601138  3100股 | 成本 63.02 | 现价 60.71 | -3.67%
+   🟢 北方华创     002371  200股 | 成本 702.76 | 现价 762.52 | +8.50%
+   🟢 宁德时代     300750  500股 | 成本 360.00 | 现价 371.89 | +3.30%
+   🟡 比亚迪      002594  200股 | 成本 93.47 | 现价 91.66 | -1.94%
+   🟢 中际旭创     300308  100股 | 成本 1004.00 | 现价 1062.50 | +5.83%
+   🟡 新易盛      300502  300股 | 成本 510.00 | 现价 508.11 | -0.37%
+   🟡 润泽科技     300442  2200股 | 成本 68.58 | 现价 68.58 | +0.00%</p>
+<p>💰 剩余现金: ¥4,118
+📈 总资产: ¥958,659 | 累计: -4.13%</p></div></details><details><summary><code>2026-07-22_09-30-09</code> </summary><div class="run-body"><p>CRON_SILENT</p></div></details><details><summary><code>2026-07-21_09-30-51</code> </summary><div class="run-body"><p>login success!
+logout success!
+login success!
+logout success!
+login success!
+logout success!
+login success!
+logout success!
+📈 A股模拟买入 | 2026-07-21
+🟢 买入 中际旭创 300308 @ 1004.00 × 100股
+   ai_datacenter_compute,ai_optical_cpo | 候选排名 #1 | 评分 9.70
+🟢 买入 新易盛 300502 @ 510.00 × 300股
+   ai_datacenter_compute,ai_optical_cpo | 候选排名 #2 | 评分 9.19</p>
+<p>📊 当前持仓 (6只):
+   🟡 工业富联     601138  3100股 | 成本 63.02 | 现价 57.59 | -8.62%
+   🟡 北方华创     002371  200股 | 成本 702.76 | 现价 677.00 | -3.67%
+   🟡 宁德时代     300750  500股 | 成本 360.00 | 现价 360.00 | +0.00%
+   🟡 比亚迪      002594  200股 | 成本 93.47 | 现价 93.47 | +0.00%
+   🟡 中际旭创     300308  100股 | 成本 1004.00 | 现价 1004.00 | +0.00%
+   🟡 新易盛      300502  300股 | 成本 510.00 | 现价 510.00 | +0.00%</p>
+<p>💰 剩余现金: ¥155,039
+📈 总资产: ¥921,062 | 累计: -7.89%</p></div></details><details><summary><code>2026-07-20_09-30-50</code> </summary><div class="run-body"><p>login success!
+logout success!
+login success!
+logout success!
+login success!
+logout success!
+login success!
+logout success!
+📈 A股模拟买入 | 2026-07-20
+🟢 买入 宁德时代 300750 @ 360.00 × 500股
+   ev_battery_autonomy | 候选排名 #1 | 评分 2.70
+🟢 买入 比亚迪 002594 @ 93.47 × 200股
+   ev_battery_autonomy | 候选排名 #2 | 评分 2.43</p>
+<p>📊 当前持仓 (7只):
+   🟡 工业富联     601138  3100股 | 成本 63.02 | 现价 63.02 | +0.00%
+   🟡 中际旭创     300308  100股 | 成本 1113.00 | 现价 1113.00 | +0.00%
+   🟡 新易盛      300502  300股 | 成本 542.60 | 现价 542.60 | +0.00%
+   🟡 北方华创     002371  200股 | 成本 702.76 | 现价 702.76 | +0.00%
+   🟡 澜起科技     688008  900股 | 成本 211.13 | 现价 211.13 | +0.00%
+   🟡 宁德时代     300750  500股 | 成本 360.00 | 现价 360.00 | +0.00%
+   🟡 比亚迪      002594  200股 | 成本 93.47 | 现价 93.47 | +0.00%</p>
+<p>💰 剩余现金: ¥995
+📈 总资产: ¥999,700 | 累计: -0.03%</p></div></details><details><summary><code>2026-07-17_09-30-31</code> </summary><div class="run-body"><p>CRON_SILENT</p></div></details><details><summary><code>2026-07-16_21-07-30</code> </summary><div class="run-body"><p>CRON_SILENT</p></div></details><details><summary><code>2026-07-16_21-06-37</code> </summary><div class="run-body"><p>login success!
+logout success!
+login success!
+logout success!
+📈 A股模拟买入 | 2026-07-16
+🟢 买入 北方华创 002371 @ 702.76 × 200股
+   semiconductor_equipment_chip | 候选排名 #4 | 评分 6.13
+🟢 买入 澜起科技 688008 @ 211.13 × 900股
+   semiconductor_equipment_chip | 候选排名 #5 | 评分 5.52</p>
+<p>📊 当前持仓 (5只):
+   🟡 工业富联     601138  3100股 | 成本 63.02 | 现价 63.02 | +0.00%
+   🟡 中际旭创     300308  100股 | 成本 1113.00 | 现价 1113.00 | +0.00%
+   🟡 新易盛      300502  300股 | 成本 542.60 | 现价 542.60 | +0.00%
+   🟡 北方华创     002371  200股 | 成本 702.76 | 现价 702.76 | +0.00%
+   🟡 澜起科技     688008  900股 | 成本 211.13 | 现价 211.13 | +0.00%</p>
+<p>💰 剩余现金: ¥199,749
+📈 总资产: ¥999,760 | 累计: -0.02%</p></div></details></div>
+  </div>
+</details>
+<details class="job" open>
+  <summary>
+    <span class="job-name">Serenity X 帖子抓取 08:00</span>
+    <span class="job-meta">0 8 * * 1-5</span>
+    <span class="badge" style="background:#16a34a">ok</span>
+    ✅
+    <span class="job-last">2026-07-31T20:03</span>
+  </summary>
+  <div class="job-detail">
+    
+    <div class="runs"><details><summary><code>2026-07-31_20-03-23</code> </summary><div class="run-body"><p>{
+  "source": "chrome_dom",
+  "total_fetched": 5,
+  "new_added": 4,
+  "posts": [
+    {
+      "id": "2083133191112843575",
+      "text": "Just a TLDR of this week:\n\nMedia: Hyperscalers overbuilt and are selling excess compute.\n-&gt; \n$GOOGL\n, \n$MSFT\n, \n$META\n, and \n$AMZN\n: Demand for compute far exceeds capacity. Capex go brrr.\n\nInstitutions: Emergency rate hike or 3x rate hikes, it's all over.\n-&gt; Kevin Warsh: No rate Hike.",
+      "created_at_beijing": "2026-07-31 18:10:30 +0800",
+      "beijing_date": "2026-07-31",
+      "source_url": "https://x.com/aleabitoreddit/status/2083133191112843575"
+    },
+    {
+      "id": "2083114743729107236",
+      "text": "Now that I think of it more, \n$POET\n optical interposer piece is actually a little more material than I thought with $SIVE. \n\nOriginally the wording was \"readiness\" for EOY 2026. \n\nBut \n$POET\n upgraded that wording, by stating \"production\" with Sivers lasers projected EOY 2026. \n\nSo",
+      "created_at_beijing": "2026-07-31 16:57:11 +0800",
+      "beijing_date": "2026-07-31",
+      "source_url": "https://x.com/aleabitoreddit/status/2083114743729107236"
+    },
+    {
+      "id": "2083106805949878330",
+      "text": "For $XFAB ER transcript:  \n\nJust to recap, my idea on $XFAB foundry growth opportunities stemmed from SiC for 800v and photonixfab/MTP for CPO applicability.   \n\n- $XFAB: \"We are making progress in co-packaged optics\".  \n\n- \"The transition to 800v... is expected to support demand",
+      "created_at_beijing": "2026-07-31 16:25:39 +0800",
+      "beijing_date": "2026-07-31",
+      "source_url": "https://x.com/aleabitoreddit/status/2083106805949878330"
+    },
+    {
+      "id": "2083088870942642391",
+      "text": "Few earnings TLDRs with my favorite \n$AXTI\n and \n$AMZN\n:\n\nAmazon:\n- Raised 2026 capex to $220B vs. prior $200B (partly due to higher memory costs, which is bullish on \n$MU\n to Samsung) \n- Even at $220B, Amazon will not have enough capacity to meet all 2026 demand; Jassy expects the",
+      "created_at_beijing": "2026-07-31 15:14:23 +0800",
+      "beijing_date": "2026-07-31",
+      "source_url": "https://x.com/aleabitoreddit/status/2083088870942642391"
+    }
+  ]
+}</p></div></details><details><summary><code>2026-07-31_08-00-13</code> </summary><div class="run-body"><p>{
+  "source": "chrome_dom",
+  "total_fetched": 5,
+  "new_added": 3,
+  "posts": [
+    {
+      "id": "2082896789880119590",
+      "text": "Did Citadel really just liquidate Situational Awareness…\n\nThen brought up entire markets the next day?\n\n\n$NBIS\n +26.25%\n\n$IREN\n +25.96%\n\n$SHAZ\n +22.82%\n\n$SNDK\n + 23.98%\n\n$BE\n +23.67%\n\n$SKHY\n +16.98%\n\n$INTC\n +12.16%\n\nAmid many others. This has gotta be one of the wildest liquidations I’ve",
+      "created_at_beijing": "2026-07-31 02:31:07 +0800",
+      "beijing_date": "2026-07-31",
+      "source_url": "https://x.com/aleabitoreddit/status/2082896789880119590"
+    },
+    {
+      "id": "2082740477795745942",
+      "text": "There's a lot of stupid commentary around Leopold raising funds. After names like \n$BE\n, \n$SNDK\n, \n$SHAZ\n, and others all had very sharp drawdowns in July.\n\nJust remember... here's a man in finance that's\n\n1.  6'5\n2. Blue Eyes\n3. Hedge Fund\n\nProbably better looking than you, and was up",
+      "created_at_beijing": "2026-07-30 16:10:00 +0800",
+      "beijing_date": "2026-07-30",
+      "source_url": "https://x.com/aleabitoreddit/status/2082740477795745942"
+    },
+    {
+      "id": "2082720873908494456",
+      "text": "Just some interesting takeaways from \n$FORM\n earnings call on CPO:\n\nSince they attributed systems revenue nearly doubled due to: \"accelerating growth in co-packaged optics or CPO\". \n\nQ1 2026: \"we now expect 2026 CPO revenues to come in at the high end of the $10 million to $20",
+      "created_at_beijing": "2026-07-30 14:52:06 +0800",
+      "beijing_date": "2026-07-30",
+      "source_url": "https://x.com/aleabitoreddit/status/2082720873908494456"
+    }
+  ]
+}</p></div></details><details><summary><code>2026-07-30_09-11-48</code> </summary><div class="run-body"><p>{
+  "source": "chrome_dom",
+  "total_fetched": 5,
+  "new_added": 0,
+  "posts": []
+}</p></div></details><details><summary><code>2026-07-30_08-02-20</code> <span class="badge" style="background:#dc2626">script failed</span></summary><div class="run-body"><h1>Cron Job: Serenity X 帖子抓取 08:00</h1>
+<p><strong>Job ID:</strong> bf4a44dcabf7
+<strong>Run Time:</strong> 2026-07-30 08:02:20
+<strong>Mode:</strong> no_agent (script)
+<strong>Status:</strong> script failed</p>
+<p>Script exited with code 1
+stdout:
+No tweets extracted. Is Chrome running and logged into x.com?</p></div></details><details><summary><code>2026-07-29_08-00-58</code> </summary><div class="run-body"><p>{
+  "source": "chrome_dom",
+  "total_fetched": 5,
+  "new_added": 2,
+  "posts": [
+    {
+      "id": "2082230983487803755",
+      "text": "I personally see it as extreme short term deleveraging that overshot many individual names. \n\n- \n$BE\n to \n$TER\n reported blowout results, with Bloom reporting 166% Y/Y rev growth + expanding margins + raised 2026 guidance... Teradyne reported 104% Y/Y revenue growth with 300%+ EPS",
+      "created_at_beijing": "2026-07-29 06:25:27 +0800",
+      "beijing_date": "2026-07-29",
+      "source_url": "https://x.com/aleabitoreddit/status/2082230983487803755"
+    },
+    {
+      "id": "2082175588555702410",
+      "text": "FCC set to ban Chinese imports of humanoid and quadruped robots per Reuters.  \n\nTo protect American Humanoid/Robotics programs.\n\nAgility Robotics ( \n$CCXI\n ) and other US humanoid players should be happy to hear this.",
+      "created_at_beijing": "2026-07-29 02:45:19 +0800",
+      "beijing_date": "2026-07-29",
+      "source_url": "https://x.com/aleabitoreddit/status/2082175588555702410"
+    }
+  ]
+}</p></div></details><details><summary><code>2026-07-28_08-00-29</code> </summary><div class="run-body"><p>{
+  "source": "chrome_dom",
+  "total_fetched": 4,
+  "new_added": 2,
+  "posts": [
+    {
+      "id": "2081579593815978273",
+      "text": "Wow, $CMXT is up a very normal +469.98% after going public today.\n\nNow valuing it at ~$487.31 billion, up from $85.5 billion. \n\nDid any of my Chinese followers buy into the IPO?",
+      "created_at_beijing": "2026-07-27 11:17:03 +0800",
+      "beijing_date": "2026-07-27",
+      "source_url": "https://x.com/aleabitoreddit/status/2081579593815978273"
+    },
+    {
+      "id": "2081548360818004299",
+      "text": "Nvidia in talks to backstop $250B worth of OpenAI DC financing.\n\n- Softbank’s SB energy develops 10 GW Ohio campus \n\n- OpenAI signs long term lease\n\n- \n$NVDA\n guarantees $250B in financing\n\n- OpenAI discussing separate agreement to buy up to $350B in Nvidia chips.\n\nNot quite sure",
+      "created_at_beijing": "2026-07-27 09:12:57 +0800",
+      "beijing_date": "2026-07-27",
+      "source_url": "https://x.com/aleabitoreddit/status/2081548360818004299"
+    }
+  ]
+}</p></div></details><details><summary><code>2026-07-27_08-04-04</code> </summary><div class="run-body"><p>{
+  "source": "chrome_dom",
+  "total_fetched": 5,
+  "new_added": 4,
+  "posts": [
+    {
+      "id": "2081472671129501729",
+      "text": "Just some TLDR news:\n\n- $CXMT IPO tomorrow if you like Chinese memory. \n\n- Samsung Electronics reportedly struggling to secure large FC-BGA substrates. Ibiden (4062) reportedly requested LTA guarantees, Samsung Electro-Mechanics sought prepayments. \n\n- Samsung + \n$AVGO\n sign memory",
+      "created_at_beijing": "2026-07-27 04:12:11 +0800",
+      "beijing_date": "2026-07-27",
+      "source_url": "https://x.com/aleabitoreddit/status/2081472671129501729"
+    },
+    {
+      "id": "2080750537121874206",
+      "text": "There you have it, \n$GOOGL\n Waymo to explore split with \n$UBER\n per FT.\n\nMy view last year was that Uber partnering with Waymo was a bad choice… since Uber would just serve as a distribution funnel that Google needed as they scale up.\n\nAnd that \n$NBIS\n Avride, other neutral players,",
+      "created_at_beijing": "2026-07-25 04:22:41 +0800",
+      "beijing_date": "2026-07-25",
+      "source_url": "https://x.com/aleabitoreddit/status/2080750537121874206"
+    },
+    {
+      "id": "2080689966045348047",
+      "text": "Jensen from \n$NVDA\n has joined X for the first time to share his letter on open models.",
+      "created_at_beijing": "2026-07-25 00:21:59 +0800",
+      "beijing_date": "2026-07-25",
+      "source_url": "https://x.com/aleabitoreddit/status/2080689966045348047"
+    },
+    {
+      "id": "2080445777395298454",
+      "text": "Not exactly for \n$AAOI\n (they're working on CPO too, just a little further behind in commercialization).\n\nThere's a podcast that featured the $SIVE CEO recently called: \"Market Insights: Photonics &amp; AI\".\n\nMost interesting take was: \n\n\"Pluggables will be around for the next 10",
+      "created_at_beijing": "2026-07-24 08:11:40 +0800",
+      "beijing_date": "2026-07-24",
+      "source_url": "https://x.com/aleabitoreddit/status/2080445777395298454"
+    }
+  ]
+}</p></div></details><details><summary><code>2026-07-24_08-06-51</code> </summary><div class="run-body"><p>{
+  "source": "chrome_dom",
+  "total_fetched": 8,
+  "new_added": 6,
+  "posts": [
+    {
+      "id": "2080394309845860668",
+      "text": "The feeling’s mutual. ",
+      "created_at_beijing": "2026-07-24 04:47:09 +0800",
+      "beijing_date": "2026-07-24",
+      "source_url": "https://x.com/aleabitoreddit/status/2080394309845860668"
+    },
+    {
+      "id": "2080394259535221222",
+      "text": "From \n$AMD\n Advancing AI, channel checks:\n\nHelios networking partners told me they expect AMD to pursue CPO for future generations of Helios scale up networking. \n\nAnd expects other hyperscalers + industry to go down the CPO route.\n\nOne AI infra executive at a company involved in a",
+      "created_at_beijing": "2026-07-24 04:46:57 +0800",
+      "beijing_date": "2026-07-24",
+      "source_url": "https://x.com/aleabitoreddit/status/2080394259535221222"
+    },
+    {
+      "id": "2080379612736221325",
+      "text": "$AMD\n reached out directly to hand me some special swag!\n\nApparently they only made 30 of these bandanas? \n\nI love AMD and Lisa Su now.",
+      "created_at_beijing": "2026-07-24 03:48:45 +0800",
+      "beijing_date": "2026-07-24",
+      "source_url": "https://x.com/aleabitoreddit/status/2080379612736221325"
+    },
+    {
+      "id": "2080334612807758136",
+      "text": "I have this feeling that Lisa from \n$AMD\n likes AI.\n\nIt’s cool getting to meet some of you at the event!",
+      "created_at_beijing": "2026-07-24 00:49:57 +0800",
+      "beijing_date": "2026-07-24",
+      "source_url": "https://x.com/aleabitoreddit/status/2080334612807758136"
+    },
+    {
+      "id": "2080153334888182065",
+      "text": "$INTC\n and \n$AMD\n to sign CPU LTAs with Chinese customers for AI DCs (Reuters). \n\n- Prices of some CPU products have risen more than 40% in China since the start of the year from sources. \n\n- Month-on-month increases topping 10% for some products\n\nCPUs were already a bottleneck,",
+      "created_at_beijing": "2026-07-23 12:49:37 +0800",
+      "beijing_date": "2026-07-23",
+      "source_url": "https://x.com/aleabitoreddit/status/2080153334888182065"
+    },
+    {
+      "id": "2080149813065396454",
+      "text": "Just some notes from \n$TSLA\n transcripts:\n\nElon Musk: \"I think Optimus will be the biggest product ever\" from Q2 earnings transcripts.\n\nEven from Q1, Elon Stated: \"I think Optimus will be our biggest product. Not just Tesla's biggest product ever, but probably the biggest product",
+      "created_at_beijing": "2026-07-23 12:35:37 +0800",
+      "beijing_date": "2026-07-23",
+      "source_url": "https://x.com/aleabitoreddit/status/2080149813065396454"
+    }
+  ]
+}</p></div></details><details><summary><code>2026-07-23_09-16-19</code> </summary><div class="run-body"><p>{
+  "source": "chrome_dom",
+  "total_fetched": 5,
+  "new_added": 0,
+  "posts": []
+}</p></div></details><details><summary><code>2026-07-23_08-01-06</code> </summary><div class="run-body"><p>{
+  "source": "chrome_dom",
+  "total_fetched": 5,
+  "new_added": 4,
+  "posts": [
+    {
+      "id": "2080035769062916479",
+      "text": "$GOOGL\n updates FY 2026 capex guidance:\n\nTo $195B-$205B. Up from $180B-$190B. \n\nGoogle is also expected to significantly increase capex in 2027.  \n\nThis is perhaps the most bullish read through on upstream semis from a hyperscaler.",
+      "created_at_beijing": "2026-07-23 05:02:27 +0800",
+      "beijing_date": "2026-07-23",
+      "source_url": "https://x.com/aleabitoreddit/status/2080035769062916479"
+    },
+    {
+      "id": "2080031508656746874",
+      "text": "$GOOGL\n now has 950M monthly Gemini users and processes 22B API tokens/min. \n\nCompared to 750M back in February. \n\nAbsurd growth adding 200 million more users in a few months.  Kinda explains why they ran out of compute, then cut allocations to \n$META\n and others. \n\nVery unlikely AI",
+      "created_at_beijing": "2026-07-23 04:45:31 +0800",
+      "beijing_date": "2026-07-23",
+      "source_url": "https://x.com/aleabitoreddit/status/2080031508656746874"
+    },
+    {
+      "id": "2080027058063958323",
+      "text": "$GOOGL\n reported earnings today:\n\nEPS: $9.11 actual vs $2.91 expected - retail reactions to EPS blowout is kinda just accounting noise, since \n$SPCX\n, Anthropic, and others were likely large contributors. \n\nRevenue: $119.7B actual vs. $116.98B expected\n\nGoogle Cloud Revenue: $24.77B",
+      "created_at_beijing": "2026-07-23 04:27:50 +0800",
+      "beijing_date": "2026-07-23",
+      "source_url": "https://x.com/aleabitoreddit/status/2080027058063958323"
+    },
+    {
+      "id": "2079947242455335379",
+      "text": "$AMD\n to invest $5B in Anthropic.\n\nAnthropic in turn will sign a 2 GW deal to buy AMD’s latest chips, worth tens of billions of dollars.\n\nLooks like they’re copying the \n$NVDA\n playbook with Anthropic last year.",
+      "created_at_beijing": "2026-07-22 23:10:40 +0800",
+      "beijing_date": "2026-07-22",
+      "source_url": "https://x.com/aleabitoreddit/status/2079947242455335379"
+    }
+  ]
+}</p></div></details><details><summary><code>2026-07-22_08-08-17</code> </summary><div class="run-body"><p>{
+  "source": "chrome_dom",
+  "total_fetched": 5,
+  "new_added": 4,
+  "posts": [
+    {
+      "id": "2079673469567226149",
+      "text": "OpenAI models reportedly escaped from its controlled environment, with no internet access.\n\nExploited zero day vulnerabilities and hacked into Hugging Face to cheat on benchmarks.\n\nHugging face then used China GLM models to carry out its defense. \n\nOpenAI said it was an “an",
+      "created_at_beijing": "2026-07-22 05:02:48 +0800",
+      "beijing_date": "2026-07-22",
+      "source_url": "https://x.com/aleabitoreddit/status/2079673469567226149"
+    },
+    {
+      "id": "2079622706572804368",
+      "text": "Wow, a historic single day recovery.\n\n$SIVEF +30.89%\n$IQEF +28.6%\n\n$AEHR\n +26.53%\n\n$CIFR\n +17.82%\n\n$NBIS\n +17.3%\n\n$AAOI\n +15.6%\n$LPK +14.48%\n\n$AXTI\n +14.12%\n\n$MU\n +12.54%\n\n$SNDK\n +12.8%\n$SOI +11.1%\n\n$TSEM\n +10.39%\n\n$LITE\n +9.25%\n\n$INTC\n +8.22%\n\n$AMD\n +8.11%\n\n$MRVL\n +7.27%",
+      "created_at_beijing": "2026-07-22 01:41:05 +0800",
+      "beijing_date": "2026-07-22",
+      "source_url": "https://x.com/aleabitoreddit/status/2079622706572804368"
+    },
+    {
+      "id": "2079495178793201678",
+      "text": "It's slightly more nuanced. Basically, \n$AMD\n SF event is tomorrow, Wed/Thurs (July 22, 23).\n\nFrom Jefferies client note, AMD is expected to provide additional disclosures around their likely scale-up CPO roadmap + MI500. \n\nIf they confirm CPO route, would positive thematically",
+      "created_at_beijing": "2026-07-21 17:14:20 +0800",
+      "beijing_date": "2026-07-21",
+      "source_url": "https://x.com/aleabitoreddit/status/2079495178793201678"
+    },
+    {
+      "id": "2079479755481776221",
+      "text": "Memory names from Kioxia finished up a whopping +17.18%. Samsung up +6.15%. \n\nOptical networking from $SIVE, \n$LITE\n, and \n$AAOI\n are showing signs of recovery, all up 4%+. \n\nNeoclouds from \n$NBIS\n to \n$IREN\n all up 4%+ premarket. \n\n\n$INTC\n to \n$AMD\n to \n$MRVL\n all up 4%+. \n\nDoes the Cramer",
+      "created_at_beijing": "2026-07-21 16:13:03 +0800",
+      "beijing_date": "2026-07-21",
+      "source_url": "https://x.com/aleabitoreddit/status/2079479755481776221"
+    }
+  ]
+}</p></div></details><details><summary><code>2026-07-21_08-00-50</code> </summary><div class="run-body"><p>{
+  "source": "chrome_dom",
+  "total_fetched": 5,
+  "new_added": 4,
+  "posts": [
+    {
+      "id": "2079319999915925938",
+      "text": "If you’re curious why \n$NBIS\n is up after hours.\n\n\n$NVDA\n disclosed it owns 9.3% beneficial ownership of Nebius via SEC filings.\n\nNot exactly too new since it dates back to Nvidia’s existing share position of 1.19M shares + $2B prefunded warrant of ~21M shares.\n\nBut great for",
+      "created_at_beijing": "2026-07-21 05:38:14 +0800",
+      "beijing_date": "2026-07-21",
+      "source_url": "https://x.com/aleabitoreddit/status/2079319999915925938"
+    },
+    {
+      "id": "2079289335351062693",
+      "text": "TBH, casually posting novel information discovery to X is how research should be done. \n\nApparently this was #16 on the Smale's list of Mathematical Problems for the Next Century?\n\nKinda shows that the value generated from AI does not scale linearly with token costs... After",
+      "created_at_beijing": "2026-07-21 03:36:23 +0800",
+      "beijing_date": "2026-07-21",
+      "source_url": "https://x.com/aleabitoreddit/status/2079289335351062693"
+    },
+    {
+      "id": "2079254669793316962",
+      "text": "$IREN\n +19.69% after revising ARR target to $4B+ from new AI cloud contracts. Its customer base now includes Microsoft, Nvidia, Perplexity, and Figure.\n\n\n$HUT\n +10.45% off a 15Y $9.8B AI DC lease\n\n\n$CIFR\n +16.76%\n\n$CLSK\n +13.7%\n\n$WYFI\n +9.18%\n\n\n$NBIS\n and \n$CRWV\n are taking their time in the",
+      "created_at_beijing": "2026-07-21 01:18:38 +0800",
+      "beijing_date": "2026-07-21",
+      "source_url": "https://x.com/aleabitoreddit/status/2079254669793316962"
+    },
+    {
+      "id": "2079089592385610023",
+      "text": "Some updates on bottleneck timelines: \n\n- ABF substrates: 1 year \n/ eg. Ajinomoto (2802) for ABF film, Ibiden, Unimicron, Nan Ya PCB, etc make the substrates \n\n- HDI Boards: Over 6 months \n/ Victory Giant (300476), Zhen Ding (4958), Unimicron, Compeq (2313), Meiko (6787)\n\n-",
+      "created_at_beijing": "2026-07-20 14:22:41 +0800",
+      "beijing_date": "2026-07-20",
+      "source_url": "https://x.com/aleabitoreddit/status/2079089592385610023"
+    }
+  ]
+}</p></div></details><details><summary><code>2026-07-20_08-01-04</code> </summary><div class="run-body"><p>{
+  "source": "chrome_dom",
+  "total_fetched": 9,
+  "new_added": 8,
+  "posts": [
+    {
+      "id": "2078338950150959558",
+      "text": "For anyone watching the 25%+ premium in \n$SKHY\n versus SK Hynix's Korean shares:\n\nThe ADRs and local shares become convertible on July 29.\n\nShould open the door for arbitrage and likely compress the ADR premium. Maybe lifting Korean shares or pressuring US shares. \n\n2.5% currently",
+      "created_at_beijing": "2026-07-18 12:39:54 +0800",
+      "beijing_date": "2026-07-18",
+      "source_url": "https://x.com/aleabitoreddit/status/2078338950150959558"
+    },
+    {
+      "id": "2078283847612186739",
+      "text": "Thanks! I’ve always shared personal research and core thoughts for free. Not trying to sell anything or tell others what to do.\n\nAnd above all, just being transparent about my own returns (win or loss)\n\nMaybe this information democratization upsets some business models…\n\nWhen",
+      "created_at_beijing": "2026-07-18 09:00:56 +0800",
+      "beijing_date": "2026-07-18",
+      "source_url": "https://x.com/aleabitoreddit/status/2078283847612186739"
+    },
+    {
+      "id": "2078228019584668121",
+      "text": "Thanks, love reading the comments!\n\nGoldman Sachs raised Innolight PT to 2581 RMB. Roughly 163.6% upside from current valuations.\n\nBut the largest thing is its 2026–2028 earnings est revision raised by a whopping 65%/108%/119%, based on:\n\n-  Much higher silicon photonics module",
+      "created_at_beijing": "2026-07-18 05:19:06 +0800",
+      "beijing_date": "2026-07-18",
+      "source_url": "https://x.com/aleabitoreddit/status/2078228019584668121"
+    },
+    {
+      "id": "2078175882620059719",
+      "text": "$META\n in talks to lease compute to Anthropic in a $10B dollar deal.\n\nSeems like they saw how profitable \n\n$SPCX\n $45B compute deal was.\n\nBut just goes to validate Neocloud business models like \n$NBIS\n, \n$IREN\n, and co if hyperscalers are copying their homework.\n\nSource: NYT",
+      "created_at_beijing": "2026-07-18 01:51:55 +0800",
+      "beijing_date": "2026-07-18",
+      "source_url": "https://x.com/aleabitoreddit/status/2078175882620059719"
+    },
+    {
+      "id": "2078161322769068533",
+      "text": "Wow, apparently there’s claims ~3.4% of the adult population in Korea faces liquidation risk?\n\n“As of July 13, over 1.2 million leveraged retail traders' accounts hit margin call lines, with 320,000 to 360,000 accounts force-liquidated by brokers.”\n\n(There were other sources",
+      "created_at_beijing": "2026-07-18 00:54:04 +0800",
+      "beijing_date": "2026-07-18",
+      "source_url": "https://x.com/aleabitoreddit/status/2078161322769068533"
+    },
+    {
+      "id": "2078150537074373117",
+      "text": "Feels bad, -49.4% drawdown this month after the recent crash.\n\nMy portfolio is mainly AI chokepoints and bottlenecks. \n\nIn the memory, photonics, robotics, and upstream semis, (on margin) which all tend to be higher beta than others. But reduced leverage recently from the crash.",
+      "created_at_beijing": "2026-07-18 00:11:12 +0800",
+      "beijing_date": "2026-07-18",
+      "source_url": "https://x.com/aleabitoreddit/status/2078150537074373117"
+    },
+    {
+      "id": "2078130772121399553",
+      "text": "Agreed! It’s nice to remember your thesis during a market crash.\n\nFrom my own personal thesis, if \n$AAOI\n hits $1.4B quarterly revenue start of Q3 2027. Which is annualized $5.6B off a $8B MC. \n\nIs it “over” for the company if that revenue ramp hasn’t even shown up in the quarterly",
+      "created_at_beijing": "2026-07-17 22:52:40 +0800",
+      "beijing_date": "2026-07-17",
+      "source_url": "https://x.com/aleabitoreddit/status/2078130772121399553"
+    },
+    {
+      "id": "2077955479742173422",
+      "text": "Kim Sunwoo of Meritz Securities: \"This Is Not the Time to Sell Samsung Electronics and \n$SKHY\n\"\n\nThey claim markets are excessively misunderstanding the situation with semis. And that DRAM shortage will intensify in the second half of this year.  \n\n- H2 2026: \"suppliers can fulfill",
+      "created_at_beijing": "2026-07-17 11:16:07 +0800",
+      "beijing_date": "2026-07-17",
+      "source_url": "https://x.com/aleabitoreddit/status/2077955479742173422"
+    }
+  ]
+}</p></div></details><details><summary><code>2026-07-17_09-10-19</code> </summary><div class="run-body"><p>{
+  "source": "chrome_dom",
+  "total_fetched": 6,
+  "new_added": 0,
+  "posts": []
+}</p></div></details><details><summary><code>2026-07-17_08-00-56</code> </summary><div class="run-body"><p>{
+  "source": "chrome_dom",
+  "total_fetched": 5,
+  "new_added": 4,
+  "posts": [
+    {
+      "id": "2077784594959725056",
+      "text": "My guess is we’re close to market bottom on semis from \n$INTC\n to \n$LITE\n.\n\nA good indicator is if everyone on \n$RDDT\n blew up their portfolios to $0.",
+      "created_at_beijing": "2026-07-16 23:57:05 +0800",
+      "beijing_date": "2026-07-16",
+      "source_url": "https://x.com/aleabitoreddit/status/2077784594959725056"
+    },
+    {
+      "id": "2077768896061563339",
+      "text": "Lot of people were curious about $SIVE capacity volume ramp modeling through fab-light (Win Semi + others):\n\nUsing 10% of Win's wafer capacity as a low-end allocation (65% yield assumption, $50-$75 ASP):\n\nSivers would support $341-$512M worth of annual array revenue. Given upper",
+      "created_at_beijing": "2026-07-16 22:54:42 +0800",
+      "beijing_date": "2026-07-16",
+      "source_url": "https://x.com/aleabitoreddit/status/2077768896061563339"
+    },
+    {
+      "id": "2077753660592033828",
+      "text": "Today, \n$MU\n announced it signed memory LTAs with \n$QCOM\n.\n\nInteresting reaction to see Micron proceeded to drop 5.37% right after.\n\nDoesn’t quite feel like there’s anything individually wrong with memory or AI names with all these structural agreements signed?\n\nMore like the tail",
+      "created_at_beijing": "2026-07-16 21:54:10 +0800",
+      "beijing_date": "2026-07-16",
+      "source_url": "https://x.com/aleabitoreddit/status/2077753660592033828"
+    },
+    {
+      "id": "2077741631135191234",
+      "text": "I hope there's someone at X can fix this subscription bug. \n\nMany people are reporting that subscriptions don't renew anymore.",
+      "created_at_beijing": "2026-07-16 21:06:22 +0800",
+      "beijing_date": "2026-07-16",
+      "source_url": "https://x.com/aleabitoreddit/status/2077741631135191234"
+    }
+  ]
+}</p></div></details></div>
+  </div>
+</details>
+<details class="job" open>
+  <summary>
+    <span class="job-name">Serenity X to A-share Weixin 08:50</span>
+    <span class="job-meta">50 8 * * 1-5</span>
+    <span class="badge" style="background:#16a34a">ok</span>
+    ✅
+    <span class="job-last">2026-07-31T20:05</span>
+  </summary>
+  <div class="job-detail">
+    
+    <div class="runs"><details><summary><code>2026-07-31_20-05-23</code> </summary><div class="run-body"><p>📊 Serenity A股评分</p>
+<p>🆕 来源帖子:
+  • FORM  Just some interesting takeaways from 
+$FORM
+ earnings call on CPO:</p>
+<p>Since they a
+  • BE, SHAZ, SNDK  There's a lot of stupid commentary around Leopold raising funds. After names lik
+  • BE, INTC, IREN, NBIS, SHAZ, SKHY, SNDK  Did Citadel really just liquidate Situational Awareness…</p>
+<p>Then brought up entire</p>
+<p>2026-07-31信号 → 2026-07-31交易
+候选: 11只</p>
+<p>Top 5:
+1. 300308 中际旭创 2.53分 (NBIS -21.8%)
+2. 601138 工业富联 2.4分 (NBIS -21.8%)
+3. 300502 新易盛 2.39分 (NBIS -21.8%)
+4. 300442 润泽科技 1.4分 (NBIS -21.8%)
+5. 300750 宁德时代 1.35分 (无美股映射)</p>
+<p>排名变化: 无</p></div></details><details><summary><code>2026-07-31_08-50-20</code> </summary><div class="run-body"><p>📊 Serenity A股评分</p>
+<p>🆕 来源帖子:
+  • FORM  Just some interesting takeaways from 
+$FORM
+ earnings call on CPO:</p>
+<p>Since they a
+  • BE, SHAZ, SNDK  There's a lot of stupid commentary around Leopold raising funds. After names lik
+  • BE, INTC, IREN, NBIS, SHAZ, SKHY, SNDK  Did Citadel really just liquidate Situational Awareness…</p>
+<p>Then brought up entire</p>
+<p>2026-07-31信号 → 2026-07-31交易
+候选: 11只</p>
+<p>Top 5:
+1. 300308 中际旭创 2.53分 (NBIS -21.8%)
+2. 601138 工业富联 2.4分 (NBIS -21.8%)
+3. 300502 新易盛 2.39分 (NBIS -21.8%)
+4. 300442 润泽科技 1.4分 (NBIS -21.8%)
+5. 300750 宁德时代 1.35分 (无美股映射)</p>
+<p>排名变化: 无</p></div></details><details><summary><code>2026-07-30_09-18-30</code> </summary><div class="run-body"><p>📊 Serenity A股评分</p>
+<p>🆕 来源帖子:
+  • GFS, LITE, SIVE  US Gov to take 1% stake in 
+$GFS
+, and award them $300m for the US CHIPS ACT.</p>
+<p>T
+  • —  Federal Reserve leaves rates unchanged at unchanged at 3.50% - 3.75%.  </p>
+<p>So far 
+  • IREN  To show solidarity with the 
+$IREN
+ holders:</p>
+<p>I now own 1 share of IREN.
+  • AXTI, LITE  $AXTI
+ enters long term agreement with 
+$LITE
+ for InP substrates. </p>
+<p>Lumentum ha
+  • META, MSFT  Just some takeaways from 
+$META
+ | 
+$MSFT
+ earnings calls:</p>
+<p>Microsoft:
+- Expecte</p>
+<p>2026-07-30信号 → 2026-07-30交易
+候选: 15只</p>
+<p>Top 5:
+1. 300308 中际旭创 9.6分 (LITE,META,MSFT +0.8%)
+2. 300502 新易盛 9.1分 (LITE,META,MSFT +0.8%)
+3. 601138 工业富联 7.74分 (LITE,META,MSFT +0.8%)
+4. 300442 润泽科技 2.27分 (META,MSFT +0.8%)
+5. 002463 沪电股份 1.76分 (META,MSFT +0.8%)</p>
+<p>排名变化: 无</p></div></details><details><summary><code>2026-07-30_09-12-08</code> </summary><div class="run-body"><p>📊 Serenity A股评分</p>
+<p>🆕 来源帖子:
+  • GFS, LITE, SIVE  US Gov to take 1% stake in 
+$GFS
+, and award them $300m for the US CHIPS ACT.</p>
+<p>T
+  • —  Federal Reserve leaves rates unchanged at unchanged at 3.50% - 3.75%.  </p>
+<p>So far 
+  • IREN  To show solidarity with the 
+$IREN
+ holders:</p>
+<p>I now own 1 share of IREN.
+  • AXTI, LITE  $AXTI
+ enters long term agreement with 
+$LITE
+ for InP substrates. </p>
+<p>Lumentum ha
+  • META, MSFT  Just some takeaways from 
+$META
+ | 
+$MSFT
+ earnings calls:</p>
+<p>Microsoft:
+- Expecte</p>
+<p>2026-07-30信号 → 2026-07-30交易
+候选: 15只</p>
+<p>Top 5:
+1. 300308 中际旭创 10.15分 (LITE,META,MSFT +6.6%)
+2. 300502 新易盛 9.62分 (LITE,META,MSFT +6.6%)
+3. 601138 工业富联 8.18分 (LITE,META,MSFT +6.6%)
+4. 300442 润泽科技 2.4分 (META,MSFT +6.6%)
+5. 002463 沪电股份 1.86分 (META,MSFT +6.6%)</p>
+<p>排名变化: 无</p></div></details><details><summary><code>2026-07-30_08-50-41</code> <span class="badge" style="background:#dc2626">script failed</span></summary><div class="run-body"><h1>Cron Job: Serenity X to A-share Weixin 08:50</h1>
+<p><strong>Job ID:</strong> c2d35a1cd9d3
+<strong>Run Time:</strong> 2026-07-30 08:50:41
+<strong>Mode:</strong> no_agent (script)
+<strong>Status:</strong> script failed</p>
+<p>Script exited with code 1
+stderr:
+Traceback (most recent call last):
+  File "/Users/wangjing/.hermes/scripts/serenity_score_weixin.py", line 49, in <module>
+    for r in data["top5"]
+             ~~~~^^^^^^^^
+KeyError: 'top5'</p></div></details><details><summary><code>2026-07-29_08-51-24</code> </summary><div class="run-body"><p>📊 Serenity A股评分</p>
+<p>🆕 来源帖子:
+  • CCXI  FCC set to ban Chinese imports of humanoid and quadruped robots per Reuters.  </p>
+<p>• BE, TER  I personally see it as extreme short term deleveraging that overshot many indivi</p>
+<p>2026-07-29信号 → 2026-07-29交易
+候选: 7只</p>
+<p>Top 5:
+1. 002050 三花智控 3.02分 (无美股映射)
+2. 601689 拓普集团 2.9分 (无美股映射)
+3. 688017 绿的谐波 2.4分 (无美股映射)
+4. 300124 汇川技术 2.04分 (无美股映射)
+5. 002747 埃斯顿 1.8分 (无美股映射)</p>
+<p>排名变化: 无</p></div></details><details><summary><code>2026-07-28_08-51-04</code> </summary><div class="run-body"><p>📊 Serenity A股评分</p>
+<p>🆕 来源帖子:
+  • NVDA  Nvidia in talks to backstop $250B worth of OpenAI DC financing.</p>
+<ul>
+<li>Softbank’s SB
+  • CMXT  Wow, $CMXT is up a very normal +469.98% after going public today.</li>
+</ul>
+<p>Now valuing i</p>
+<p>2026-07-28信号 → 2026-07-28交易
+候选: 15只</p>
+<p>Top 5:
+1. 300308 中际旭创 3.2分 (NVDA -2.3%)
+2. 300502 新易盛 3.03分 (NVDA -2.3%)
+3. 601138 工业富联 2.94分 (NVDA -2.3%)
+4. 002371 北方华创 2.08分 (NVDA -2.3%)
+5. 688008 澜起科技 1.87分 (NVDA -2.3%)</p>
+<p>排名变化: 无</p></div></details><details><summary><code>2026-07-27_08-51-05</code> </summary><div class="run-body"><p>📊 Serenity A股评分</p>
+<p>🆕 来源帖子:
+  • NVDA  Jensen from 
+$NVDA
+ has joined X for the first time to share his letter on open 
+  • GOOGL, NBIS, UBER  There you have it, 
+$GOOGL
+ Waymo to explore split with 
+$UBER
+ per FT.</p>
+<p>My view
+  • AVGO, CXMT  Just some TLDR news:</p>
+<ul>
+<li>
+<p>$CXMT IPO tomorrow if you like Chinese memory. </p>
+</li>
+<li>
+<p>Samsu</p>
+</li>
+</ul>
+<p>2026-07-27信号 → 2026-07-27交易
+候选: 16只</p>
+<p>Top 5:
+1. 300308 中际旭创 6.44分 (AVGO,NBIS,NVDA -1.0%)
+2. 300502 新易盛 6.09分 (AVGO,NBIS,NVDA -1.0%)
+3. 601138 工业富联 5.92分 (AVGO,NBIS,NVDA -1.0%)
+4. 002371 北方华创 3.83分 (AVGO,NVDA -1.0%)
+5. 688008 澜起科技 3.45分 (AVGO,NVDA -1.0%)</p>
+<p>排名变化: 无</p></div></details><details><summary><code>2026-07-24_11-22-48</code> </summary><div class="run-body"><p>📊 Serenity A股评分</p>
+<p>🆕 来源帖子:
+  • TSLA  Just some notes from 
+$TSLA
+ transcripts:</p>
+<p>Elon Musk: "I think Optimus will be t
+  • AMD, INTC  $INTC
+ and 
+$AMD
+ to sign CPU LTAs with Chinese customers for AI DCs (Reuters). 
+  • AMD  I have this feeling that Lisa from 
+$AMD
+ likes AI.</p>
+<p>It’s cool getting to meet s
+  • AMD  $AMD
+ reached out directly to hand me some special swag!</p>
+<p>Apparently they only m
+  • AMD  From 
+$AMD
+ Advancing AI, channel checks:</p>
+<p>Helios networking partners told me th
+  • —  The feeling’s mutual. </p>
+<p>2026-07-24信号 → 2026-07-24交易
+候选: 20只</p>
+<p>Top 5:
+1. 601138 工业富联 8.88分 (AMD -5.0%)
+2. 300308 中际旭创 7.41分 (AMD -5.0%)
+3. 300502 新易盛 6.98分 (AMD -5.0%)
+4. 002371 北方华创 6.83分 (AMD -5.0%)
+5. 300442 润泽科技 6.45分 (AMD -5.0%)</p>
+<p>排名变化: 无</p></div></details><details><summary><code>2026-07-24_11-15-01</code> </summary><div class="run-body"><p>📊 Serenity A股评分</p>
+<p>🆕 来源帖子:
+  • AMD, NVDA  $AMD
+ to invest $5B in Anthropic.</p>
+<p>Anthropic in turn will sign a 2 GW deal to bu
+  • GOOGL, SPCX  $GOOGL
+ reported earnings today:</p>
+<p>EPS: $9.11 actual vs $2.91 expected - retail r
+  • GOOGL, META  $GOOGL
+ now has 950M monthly Gemini users and processes 22B API tokens/min. </p>
+<p>Co
+  • GOOGL  $GOOGL
+ updates FY 2026 capex guidance:</p>
+<p>To $195B-$205B. Up from $180B-$190B. </p>
+<p>2026-07-23信号 → 2026-07-23交易
+候选: 15只</p>
+<p>Top 5:
+1. 300308 中际旭创 9.12分 (AMD,META,NVDA +6.6%)
+2. 601138 工业富联 8.95分 (AMD,META,NVDA +6.6%)
+3. 300502 新易盛 8.62分 (AMD,META,NVDA +6.6%)
+4. 300442 润泽科技 5.71分 (AMD,META,NVDA +6.6%)
+5. 002463 沪电股份 4.44分 (AMD,META,NVDA +6.6%)</p>
+<p>排名变化: 无</p></div></details><details><summary><code>2026-07-24_09-25-53</code> </summary><div class="run-body"><p>📊 Serenity A股评分</p>
+<p>🆕 来源帖子:
+  • AMD, NVDA  $AMD
+ to invest $5B in Anthropic.</p>
+<p>Anthropic in turn will sign a 2 GW deal to bu
+  • GOOGL, SPCX  $GOOGL
+ reported earnings today:</p>
+<p>EPS: $9.11 actual vs $2.91 expected - retail r
+  • GOOGL, META  $GOOGL
+ now has 950M monthly Gemini users and processes 22B API tokens/min. </p>
+<p>Co
+  • GOOGL  $GOOGL
+ updates FY 2026 capex guidance:</p>
+<p>To $195B-$205B. Up from $180B-$190B. </p>
+<p>2026-07-23信号 → 2026-07-23交易
+候选: 15只</p>
+<p>Top 5:
+1. 300308 中际旭创 9.12分 (AMD,META,NVDA +6.6%)
+2. 601138 工业富联 8.95分 (AMD,META,NVDA +6.6%)
+3. 300502 新易盛 8.62分 (AMD,META,NVDA +6.6%)
+4. 300442 润泽科技 5.71分 (AMD,META,NVDA +6.6%)
+5. 002463 沪电股份 4.44分 (AMD,META,NVDA +6.6%)</p>
+<p>排名变化: 无</p></div></details><details><summary><code>2026-07-23_09-18-36</code> </summary><div class="run-body"><p>📊 Serenity A股评分</p>
+<p>🆕 来源帖子:
+  • AAOI, AMD, INTC, IREN, LITE, MRVL, NBIS, SIVE  Memory names from Kioxia finished up a whopping +17.18%. Samsung up +6.15%. </p>
+<p>Op
+  • AMD  It's slightly more nuanced. Basically, 
+$AMD
+ SF event is tomorrow, Wed/Thurs (J
+  • AAOI, AEHR, AMD, AXTI, CIFR, INTC, IQEF, LITE, LPK, MRVL, MU, NBIS, SIVEF, SNDK, SOI, TSEM  Wow, a historic single day recovery.</p>
+<p>$SIVEF +30.89%
+$IQEF +28.6%</p>
+<p>$AEHR
+ +26.53
+  • —  OpenAI models reportedly escaped from its controlled environment, with no intern</p>
+<p>2026-07-22信号 → 2026-07-22交易
+候选: 15只</p>
+<p>Top 5:
+1. 300308 中际旭创 12.76分 (AAOI,AMD,LITE,NBIS -5.0%)
+2. 300502 新易盛 12.07分 (AAOI,AMD,LITE,NBIS -5.0%)
+3. 601138 工业富联 11.6分 (AAOI,AMD,LITE,NBIS -5.0%)
+4. 002371 北方华创 6.53分 (AMD,MU -5.0%)
+5. 300442 润泽科技 5.92分 (AMD,NBIS -5.0%)</p>
+<p>排名变化: 无</p></div></details><details><summary><code>2026-07-23_09-16-26</code> </summary><div class="run-body"><p>📊 Serenity A股评分</p>
+<p>🆕 来源帖子:
+  • SKHY  Kim Sunwoo of Meritz Securities: "This Is Not the Time to Sell Samsung Electroni
+  • AAOI  Agreed! It’s nice to remember your thesis during a market crash.</p>
+<p>From my own pe
+  • —  Feels bad, -49.4% drawdown this month after the recent crash.</p>
+<p>My portfolio is m
+  • —  Wow, apparently there’s claims ~3.4% of the adult population in Korea faces liqu
+  • IREN, META, NBIS, SPCX  $META
+ in talks to lease compute to Anthropic in a $10B dollar deal.</p>
+<p>Seems like
+  • —  Thanks, love reading the comments!</p>
+<p>Goldman Sachs raised Innolight PT to 2581 RM
+  • —  Thanks! I’ve always shared personal research and core thoughts for free. Not try
+  • SKHY  For anyone watching the 25%+ premium in 
+$SKHY
+ versus SK Hynix's Korean shares:
+  • —  There’s nothing quite like the scent of more AI capex on a Sunday.</p>
+<p>Probably som</p>
+<p>2026-07-20信号 → 2026-07-20交易
+候选: 20只</p>
+<p>Top 5:
+1. 300308 中际旭创 9.7分 (AAOI,META,NBIS +6.6%)
+2. 300502 新易盛 9.19分 (AAOI,META,NBIS +6.6%)
+3. 601138 工业富联 8.95分 (AAOI,META,NBIS +6.6%)
+4. 300750 宁德时代 5.4分 (无美股映射)
+5. 002594 比亚迪 4.86分 (无美股映射)</p>
+<p>排名变化: 002463 14→13↑, 688041 13→14↓</p></div></details><details><summary><code>2026-07-23_08-51-03</code> </summary><div class="run-body"><p>📊 Serenity A股评分</p>
+<p>🆕 来源帖子:
+  • SKHY  Kim Sunwoo of Meritz Securities: "This Is Not the Time to Sell Samsung Electroni
+  • AAOI  Agreed! It’s nice to remember your thesis during a market crash.</p>
+<p>From my own pe
+  • —  Feels bad, -49.4% drawdown this month after the recent crash.</p>
+<p>My portfolio is m
+  • —  Wow, apparently there’s claims ~3.4% of the adult population in Korea faces liqu
+  • IREN, META, NBIS, SPCX  $META
+ in talks to lease compute to Anthropic in a $10B dollar deal.</p>
+<p>Seems like
+  • —  Thanks, love reading the comments!</p>
+<p>Goldman Sachs raised Innolight PT to 2581 RM
+  • —  Thanks! I’ve always shared personal research and core thoughts for free. Not try
+  • SKHY  For anyone watching the 25%+ premium in 
+$SKHY
+ versus SK Hynix's Korean shares:
+  • —  There’s nothing quite like the scent of more AI capex on a Sunday.</p>
+<p>Probably som</p>
+<p>2026-07-20信号 → 2026-07-20交易
+候选: 20只</p>
+<p>Top 5:
+1. 300308 中际旭创 9.7分 (AAOI,META,NBIS +6.6%)
+2. 300502 新易盛 9.19分 (AAOI,META,NBIS +6.6%)
+3. 601138 工业富联 8.95分 (AAOI,META,NBIS +6.6%)
+4. 300750 宁德时代 5.4分 (无美股映射)
+5. 002594 比亚迪 4.86分 (无美股映射)</p>
+<p>排名变化: 002463 14→13↑, 688041 13→14↓</p></div></details><details><summary><code>2026-07-22_08-50-08</code> </summary><div class="run-body"><p>📊 Serenity A股评分</p>
+<p>🆕 来源帖子:
+  • SKHY  Kim Sunwoo of Meritz Securities: "This Is Not the Time to Sell Samsung Electroni
+  • AAOI  Agreed! It’s nice to remember your thesis during a market crash.</p>
+<p>From my own pe
+  • —  Feels bad, -49.4% drawdown this month after the recent crash.</p>
+<p>My portfolio is m
+  • —  Wow, apparently there’s claims ~3.4% of the adult population in Korea faces liqu
+  • IREN, META, NBIS, SPCX  $META
+ in talks to lease compute to Anthropic in a $10B dollar deal.</p>
+<p>Seems like
+  • —  Thanks, love reading the comments!</p>
+<p>Goldman Sachs raised Innolight PT to 2581 RM
+  • —  Thanks! I’ve always shared personal research and core thoughts for free. Not try
+  • SKHY  For anyone watching the 25%+ premium in 
+$SKHY
+ versus SK Hynix's Korean shares:
+  • —  There’s nothing quite like the scent of more AI capex on a Sunday.</p>
+<p>Probably som</p>
+<p>2026-07-20信号 → 2026-07-20交易
+候选: 20只</p>
+<p>Top 5:
+1. 300308 中际旭创 9.7分 (AAOI,META,NBIS +6.6%)
+2. 300502 新易盛 9.19分 (AAOI,META,NBIS +6.6%)
+3. 601138 工业富联 8.95分 (AAOI,META,NBIS +6.6%)
+4. 300750 宁德时代 5.4分 (无美股映射)
+5. 002594 比亚迪 4.86分 (无美股映射)</p>
+<p>排名变化: 002463 14→13↑, 688041 13→14↓</p></div></details></div>
+  </div>
+</details>
+<details class="job" open>
+  <summary>
+    <span class="job-name">美股数据下载-07:00</span>
+    <span class="job-meta">0 7 * * 1-5</span>
+    <span class="badge" style="background:#16a34a">ok</span>
+    ✅
+    <span class="job-last">2026-07-31T20:06</span>
+  </summary>
+  <div class="job-detail">
+    
+    <div class="runs"><details><summary><code>2026-07-31_20-06-41</code> </summary><div class="run-body"><p>Done. Updated=23, Skipped=0, Failed=0</p></div></details><details><summary><code>2026-07-31_07-01-16</code> </summary><div class="run-body"><p>AAOI: +1 rows
+  AAPL: +1 rows
+  AMD: +1 rows
+  AMZN: +1 rows
+  ASML: +1 rows
+  ASTS: +1 rows
+  AVGO: +1 rows
+  DASH: +1 rows
+  HIMX: +1 rows
+  JD: +1 rows
+  LITE: +1 rows
+  MELI: +1 rows
+  META: +1 rows
+  MSFT: +1 rows
+  MU: +1 rows
+  NBIS: +1 rows
+  NVDA: +1 rows
+  PL: +1 rows
+  RKLB: +1 rows
+  TSLA: +1 rows
+  TSM: +1 rows
+  UBER: +1 rows</p>
+<p>Done. Updated=23, Skipped=0, Failed=0</p></div></details></div>
+  </div>
+</details>
+</body>
+</html>
