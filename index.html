@@ -27,7 +27,7 @@
 </head>
 <body>
 <h1>📊 Cron 任务执行报告</h1>
-<div class="sub">生成时间: 2026-08-06 08:01:05 | ✅=送达成功 ❌=微信送达失败 | 点击任务展开每次执行详情</div>
+<div class="sub">生成时间: 2026-08-06 09:30:06 | ✅=送达成功 ❌=微信送达失败 | 点击任务展开每次执行详情</div>
 
 <details class="job" open>
   <summary>
@@ -643,12 +643,25 @@ logout success!
     <span class="job-name">Serenity X 帖子抓取 08:00</span>
     <span class="job-meta">0 8 * * 1-5</span>
     <span class="badge" style="background:#16a34a">ok</span>
-    ✅
-    <span class="job-last">2026-08-05T08:00</span>
+    ❌
+    <span class="job-last">2026-08-06T08:01</span>
   </summary>
   <div class="job-detail">
-    
-    <div class="runs"><details><summary><code>2026-08-05_08-00-55</code> </summary><div class="run-body"><p>{
+    <div class="err" title="live adapter send failed: iLink sendmessage rate limited; cooldown active for 10.0s; live adapter delivery to weixin:o9cq80xwj7WcVzumQngYgah7nnlc@im.wechat failed: iLink sendmessage rate limited; cooldown active for 10.0s; delivery error: Weixin send failed: iLink sendmessage rate limited; cooldown active for 10.0s"><b>上次送达失败:</b> live adapter send failed: iLink sendmessage rate limited; cooldown active for 10.0s; live adapter delivery to weixin:o9cq80xwj7WcVzumQngYgah7nnlc@im.wechat failed: iLink sendmessage rate limited; cool</div>
+    <div class="runs"><details><summary><code>2026-08-06_08-01-07</code> </summary><div class="run-body"><p>{
+  "source": "chrome_dom",
+  "total_fetched": 4,
+  "new_added": 1,
+  "posts": [
+    {
+      "id": "2084795597417263442",
+      "text": "$RKLB\n has been awarded a $397M contract by the US Space Force.\n\nTo build out Flatellite satellites and launch them on their Medium Lift rocket, Neutron.",
+      "created_at_beijing": "2026-08-05 08:16:18 +0800",
+      "beijing_date": "2026-08-05",
+      "source_url": "https://x.com/aleabitoreddit/status/2084795597417263442"
+    }
+  ]
+}</p></div></details><details><summary><code>2026-08-05_08-00-55</code> </summary><div class="run-body"><p>{
   "source": "chrome_dom",
   "total_fetched": 4,
   "new_added": 3,
@@ -1004,40 +1017,6 @@ No tweets extracted. Is Chrome running and logged into x.com?</p></div></details
       "source_url": "https://x.com/aleabitoreddit/status/2079479755481776221"
     }
   ]
-}</p></div></details><details><summary><code>2026-07-21_08-00-50</code> </summary><div class="run-body"><p>{
-  "source": "chrome_dom",
-  "total_fetched": 5,
-  "new_added": 4,
-  "posts": [
-    {
-      "id": "2079319999915925938",
-      "text": "If you’re curious why \n$NBIS\n is up after hours.\n\n\n$NVDA\n disclosed it owns 9.3% beneficial ownership of Nebius via SEC filings.\n\nNot exactly too new since it dates back to Nvidia’s existing share position of 1.19M shares + $2B prefunded warrant of ~21M shares.\n\nBut great for",
-      "created_at_beijing": "2026-07-21 05:38:14 +0800",
-      "beijing_date": "2026-07-21",
-      "source_url": "https://x.com/aleabitoreddit/status/2079319999915925938"
-    },
-    {
-      "id": "2079289335351062693",
-      "text": "TBH, casually posting novel information discovery to X is how research should be done. \n\nApparently this was #16 on the Smale's list of Mathematical Problems for the Next Century?\n\nKinda shows that the value generated from AI does not scale linearly with token costs... After",
-      "created_at_beijing": "2026-07-21 03:36:23 +0800",
-      "beijing_date": "2026-07-21",
-      "source_url": "https://x.com/aleabitoreddit/status/2079289335351062693"
-    },
-    {
-      "id": "2079254669793316962",
-      "text": "$IREN\n +19.69% after revising ARR target to $4B+ from new AI cloud contracts. Its customer base now includes Microsoft, Nvidia, Perplexity, and Figure.\n\n\n$HUT\n +10.45% off a 15Y $9.8B AI DC lease\n\n\n$CIFR\n +16.76%\n\n$CLSK\n +13.7%\n\n$WYFI\n +9.18%\n\n\n$NBIS\n and \n$CRWV\n are taking their time in the",
-      "created_at_beijing": "2026-07-21 01:18:38 +0800",
-      "beijing_date": "2026-07-21",
-      "source_url": "https://x.com/aleabitoreddit/status/2079254669793316962"
-    },
-    {
-      "id": "2079089592385610023",
-      "text": "Some updates on bottleneck timelines: \n\n- ABF substrates: 1 year \n/ eg. Ajinomoto (2802) for ABF film, Ibiden, Unimicron, Nan Ya PCB, etc make the substrates \n\n- HDI Boards: Over 6 months \n/ Victory Giant (300476), Zhen Ding (4958), Unimicron, Compeq (2313), Meiko (6787)\n\n-",
-      "created_at_beijing": "2026-07-20 14:22:41 +0800",
-      "beijing_date": "2026-07-20",
-      "source_url": "https://x.com/aleabitoreddit/status/2079089592385610023"
-    }
-  ]
 }</p></div></details></div>
   </div>
 </details>
@@ -1047,11 +1026,14 @@ No tweets extracted. Is Chrome running and logged into x.com?</p></div></details
     <span class="job-meta">50 8 * * 1-5</span>
     <span class="badge" style="background:#16a34a">ok</span>
     ✅
-    <span class="job-last">2026-08-05T08:51</span>
+    <span class="job-last">2026-08-06T08:51</span>
   </summary>
   <div class="job-detail">
     
-    <div class="runs"><details><summary><code>2026-08-05_08-51-03</code> </summary><div class="run-body"><p>📊 Serenity A股评分</p>
+    <div class="runs"><details><summary><code>2026-08-06_08-51-11</code> </summary><div class="run-body"><p>📊 Serenity A股评分</p>
+<p>2026-08-06
+候选: 0只</p>
+<p>（今日大V帖子未命中策略主题，无买入信号）</p></div></details><details><summary><code>2026-08-05_08-51-03</code> </summary><div class="run-body"><p>📊 Serenity A股评分</p>
 <p>🆕 来源帖子:
   • MU, SNDK  SK Hynix, 
 $MU
@@ -1336,28 +1318,6 @@ $AMD
 4. 002371 北方华创 6.83分 (AMD -5.0%)
 5. 300442 润泽科技 6.45分 (AMD -5.0%)</p>
 <p>排名变化: 无</p></div></details><details><summary><code>2026-07-24_11-15-01</code> </summary><div class="run-body"><p>📊 Serenity A股评分</p>
-<p>🆕 来源帖子:
-  • AMD, NVDA  $AMD
- to invest $5B in Anthropic.</p>
-<p>Anthropic in turn will sign a 2 GW deal to bu
-  • GOOGL, SPCX  $GOOGL
- reported earnings today:</p>
-<p>EPS: $9.11 actual vs $2.91 expected - retail r
-  • GOOGL, META  $GOOGL
- now has 950M monthly Gemini users and processes 22B API tokens/min. </p>
-<p>Co
-  • GOOGL  $GOOGL
- updates FY 2026 capex guidance:</p>
-<p>To $195B-$205B. Up from $180B-$190B. </p>
-<p>2026-07-23信号 → 2026-07-23交易
-候选: 15只</p>
-<p>Top 5:
-1. 300308 中际旭创 9.12分 (AMD,META,NVDA +6.6%)
-2. 601138 工业富联 8.95分 (AMD,META,NVDA +6.6%)
-3. 300502 新易盛 8.62分 (AMD,META,NVDA +6.6%)
-4. 300442 润泽科技 5.71分 (AMD,META,NVDA +6.6%)
-5. 002463 沪电股份 4.44分 (AMD,META,NVDA +6.6%)</p>
-<p>排名变化: 无</p></div></details><details><summary><code>2026-07-24_09-25-53</code> </summary><div class="run-body"><p>📊 Serenity A股评分</p>
 <p>🆕 来源帖子:
   • AMD, NVDA  $AMD
  to invest $5B in Anthropic.</p>
