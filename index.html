@@ -27,7 +27,7 @@
 </head>
 <body>
 <h1>📊 Cron 任务执行报告</h1>
-<div class="sub">生成时间: 2026-10-15 14:57:18 | ✅=送达成功 ❌=微信送达失败 | 点击任务展开每次执行详情</div>
+<div class="sub">生成时间: 2026-10-16 07:00:53 | ✅=送达成功 ❌=微信送达失败 | 点击任务展开每次执行详情</div>
 
 <details class="job" open>
   <summary>
@@ -35,11 +35,28 @@
     <span class="job-meta">0 21 * * 1-5</span>
     <span class="badge" style="background:#16a34a">ok</span>
     ❌
-    <span class="job-last">2026-10-14T21:05</span>
+    <span class="job-last">2026-10-16T01:41</span>
   </summary>
   <div class="job-detail">
-    <div class="err" title="live adapter send to weixin:o9cq80xwj7WcVzumQngYgah7nnlc@im.wechat timed out before the coroutine was dispatched; delivery error: Weixin send failed: iLink sendmessage rate limited: ret=-2 errcode=None errmsg=prepare failed"><b>上次送达失败:</b> live adapter send to weixin:o9cq80xwj7WcVzumQngYgah7nnlc@im.wechat timed out before the coroutine was dispatched; delivery error: Weixin send failed: iLink sendmessage rate limited: ret=-2 errcode=Non</div>
-    <div class="runs"><details><summary><code>2026-10-14_21-04-06</code> </summary><div class="run-body"><p>🇺🇸 美股趋势动量 | 2026-10-13
+    <div class="err" title="live adapter send failed: iLink sendmessage rate limited: ret=-2 errcode=None errmsg=prepare failed; live adapter delivery to weixin:o9cq80xwj7WcVzumQngYgah7nnlc@im.wechat failed: iLink sendmessage rate limited: ret=-2 errcode=None errmsg=prepare failed; delivery error: Weixin send failed: iLink sendmessage rate limited: ret=-2 errcode=None errmsg=prepare failed"><b>上次送达失败:</b> live adapter send failed: iLink sendmessage rate limited: ret=-2 errcode=None errmsg=prepare failed; live adapter delivery to weixin:o9cq80xwj7WcVzumQngYgah7nnlc@im.wechat failed: iLink sendmessage ra</div>
+    <div class="runs"><details><summary><code>2026-10-15_22-44-27</code> </summary><div class="run-body"><p>🇺🇸 美股趋势动量 | 2026-10-14
+策略: MA50入场 + 63日动量 &gt; 0, 前3只, 跌破MA50卖出
+🟢 卖出 ANET
+   买入 180.35 → 卖出 195.42
+   盈亏 +2486.55 (+8.36%)
+   原因: 跌破MA50
+🟢 买入 MRVL @ $245.28 × 131股 ($32,132)
+   MA50溢价 +2.2% | 63日动量 +30.3%</p>
+<p>📊 当前持仓 (3只):
+   🟢 SNOW   121股 | 成本 $271.87 | 现价 $335.08 | +23.25%
+   🟢 PLTR   152股 | 成本 $175.89 | 现价 $200.97 | +14.26%
+   🔴 MRVL   131股 | 成本 $245.28 | 现价 $245.28 | +0.00%</p>
+<p>💰 现金: $184
+📈 总资产: $103,408 | 累计: +3.41%</p>
+<p>────────────────
+📋 今日操作一览
+   🔴 卖出 ANET   @ $195.42 | 🟢 +2486.55 (+8.36%) | 理由: 收盘价跌破MA50
+   🟢 买入 MRVL   @ $245.28 × 131股 ($32,132) | 理由: MA50溢价+2.2%, 63日动量+30.3%</p></div></details><details><summary><code>2026-10-14_21-04-06</code> </summary><div class="run-body"><p>🇺🇸 美股趋势动量 | 2026-10-13
 策略: MA50入场 + 63日动量 &gt; 0, 前3只, 跌破MA50卖出</p>
 <p>📊 当前持仓 (3只):
    🟢 SNOW   121股 | 成本 $271.87 | 现价 $357.76 | +31.59%
@@ -137,14 +154,7 @@
    🟢 ANET   165股 | 成本 $180.35 | 现价 $205.70 | +14.06%
    🟢 PLTR   152股 | 成本 $175.89 | 现价 $192.59 | +9.49%</p>
 <p>💰 现金: $71
-📈 总资产: $103,700 | 累计: +3.70%</p></div></details><details><summary><code>2026-09-24_21-03-57</code> </summary><div class="run-body"><p>🇺🇸 美股趋势动量 | 2026-09-23
-策略: MA50入场 + 63日动量 &gt; 0, 前3只, 跌破MA50卖出</p>
-<p>📊 当前持仓 (3只):
-   🟢 SNOW   121股 | 成本 $271.87 | 现价 $334.81 | +23.15%
-   🟢 ANET   165股 | 成本 $180.35 | 现价 $203.47 | +12.82%
-   🟢 PLTR   152股 | 成本 $175.89 | 现价 $191.79 | +9.04%</p>
-<p>💰 现金: $71
-📈 总资产: $103,308 | 累计: +3.31%</p></div></details></div>
+📈 总资产: $103,700 | 累计: +3.70%</p></div></details></div>
   </div>
 </details>
 <details class="job" open>
@@ -353,12 +363,12 @@
     <span class="job-name">模拟持仓-14:50卖出</span>
     <span class="job-meta">50 14 * * 1-5</span>
     <span class="badge" style="background:#16a34a">ok</span>
-    ❌
-    <span class="job-last">2026-10-14T14:55</span>
+    ✅
+    <span class="job-last">2026-10-15T14:57</span>
   </summary>
   <div class="job-detail">
-    <div class="err" title="live adapter send failed: iLink sendmessage rate limited: ret=-2 errcode=None errmsg=prepare failed; live adapter delivery to weixin:o9cq80xwj7WcVzumQngYgah7nnlc@im.wechat failed: iLink sendmessage rate limited: ret=-2 errcode=None errmsg=prepare failed; delivery error: Weixin send failed: iLink sendmessage rate limited: ret=-2 errcode=None errmsg=prepare failed"><b>上次送达失败:</b> live adapter send failed: iLink sendmessage rate limited: ret=-2 errcode=None errmsg=prepare failed; live adapter delivery to weixin:o9cq80xwj7WcVzumQngYgah7nnlc@im.wechat failed: iLink sendmessage ra</div>
-    <div class="runs"><details><summary><code>2026-10-14_14-53-59</code> </summary><div class="run-body"><p>CRON_SILENT</p></div></details><details><summary><code>2026-10-13_14-51-27</code> </summary><div class="run-body"><p>CRON_SILENT</p></div></details><details><summary><code>2026-10-12_14-57-52</code> </summary><div class="run-body"><p>CRON_SILENT</p></div></details><details><summary><code>2026-10-09_15-38-11</code> </summary><div class="run-body"><p>CRON_SILENT</p></div></details><details><summary><code>2026-10-08_14-50-52</code> </summary><div class="run-body"><p>CRON_SILENT</p></div></details><details><summary><code>2026-10-07_15-05-54</code> </summary><div class="run-body"><p>CRON_SILENT</p></div></details><details><summary><code>2026-10-06_14-50-16</code> </summary><div class="run-body"><p>CRON_SILENT</p></div></details><details><summary><code>2026-10-05_14-50-49</code> </summary><div class="run-body"><p>CRON_SILENT</p></div></details><details><summary><code>2026-10-02_15-17-28</code> </summary><div class="run-body"><p>CRON_SILENT</p></div></details><details><summary><code>2026-10-01_14-50-07</code> </summary><div class="run-body"><p>CRON_SILENT</p></div></details><details><summary><code>2026-09-30_14-50-43</code> </summary><div class="run-body"><p>CRON_SILENT</p></div></details><details><summary><code>2026-09-29_14-52-04</code> </summary><div class="run-body"><p>CRON_SILENT</p></div></details><details><summary><code>2026-09-28_15-06-17</code> </summary><div class="run-body"><p>login success!
+    
+    <div class="runs"><details><summary><code>2026-10-15_14-57-24</code> </summary><div class="run-body"><p>CRON_SILENT</p></div></details><details><summary><code>2026-10-14_14-53-59</code> </summary><div class="run-body"><p>CRON_SILENT</p></div></details><details><summary><code>2026-10-13_14-51-27</code> </summary><div class="run-body"><p>CRON_SILENT</p></div></details><details><summary><code>2026-10-12_14-57-52</code> </summary><div class="run-body"><p>CRON_SILENT</p></div></details><details><summary><code>2026-10-09_15-38-11</code> </summary><div class="run-body"><p>CRON_SILENT</p></div></details><details><summary><code>2026-10-08_14-50-52</code> </summary><div class="run-body"><p>CRON_SILENT</p></div></details><details><summary><code>2026-10-07_15-05-54</code> </summary><div class="run-body"><p>CRON_SILENT</p></div></details><details><summary><code>2026-10-06_14-50-16</code> </summary><div class="run-body"><p>CRON_SILENT</p></div></details><details><summary><code>2026-10-05_14-50-49</code> </summary><div class="run-body"><p>CRON_SILENT</p></div></details><details><summary><code>2026-10-02_15-17-28</code> </summary><div class="run-body"><p>CRON_SILENT</p></div></details><details><summary><code>2026-10-01_14-50-07</code> </summary><div class="run-body"><p>CRON_SILENT</p></div></details><details><summary><code>2026-09-30_14-50-43</code> </summary><div class="run-body"><p>CRON_SILENT</p></div></details><details><summary><code>2026-09-29_14-52-04</code> </summary><div class="run-body"><p>CRON_SILENT</p></div></details><details><summary><code>2026-09-28_15-06-17</code> </summary><div class="run-body"><p>login success!
 logout success!
 📉 A股模拟卖出 | 2026-09-28
 🔴 卖出 沪电股份 002463
@@ -371,13 +381,7 @@ logout success!
 <p>📊 当前持仓 (1只):
    🟡 沪电股份     002463  2200股 | 成本 126.06 | 现价 124.05 | -1.59%</p>
 <p>💰 现金: ¥587,482
-📈 总资产: ¥860,392 | 累计: -13.96%</p></div></details><details><summary><code>2026-09-24_14-53-57</code> </summary><div class="run-body"><p>login success!
-logout success!
-📉 A股模拟卖出 | 2026-09-24</p>
-<p>📊 当前持仓 (1只):
-   🟡 沪电股份     002463  2200股 | 成本 126.06 | 现价 124.15 | -1.52%</p>
-<p>💰 现金: ¥587,482
-📈 总资产: ¥860,612 | 累计: -13.94%</p></div></details></div>
+📈 总资产: ¥860,392 | 累计: -13.96%</p></div></details></div>
   </div>
 </details>
 <details class="job" open>
