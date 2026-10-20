@@ -27,19 +27,44 @@
 </head>
 <body>
 <h1>📊 Cron 任务执行报告</h1>
-<div class="sub">生成时间: 2026-10-19 15:05:03 | ✅=送达成功 ❌=微信送达失败 | 点击任务展开每次执行详情</div>
+<div class="sub">生成时间: 2026-10-20 09:11:10 | ✅=送达成功 ❌=微信送达失败 | 点击任务展开每次执行详情</div>
 
 <details class="job" open>
   <summary>
     <span class="job-name">美股趋势动量-21:00信号</span>
     <span class="job-meta">0 21 * * 1-5</span>
     <span class="badge" style="background:#16a34a">ok</span>
-    ✅
-    <span class="job-last">2026-10-16T21:35</span>
+    ❌
+    <span class="job-last">2026-10-19T21:27</span>
   </summary>
   <div class="job-detail">
-    
-    <div class="runs"><details><summary><code>2026-10-16_21-09-30</code> </summary><div class="run-body"><p>🇺🇸 美股趋势动量 | 2026-10-15
+    <div class="err" title="live adapter send to weixin:o9cq80xwj7WcVzumQngYgah7nnlc@im.wechat timed out before the coroutine was dispatched; delivery error: Weixin send failed: iLink sendmessage rate limited: ret=-2 errcode=None errmsg=prepare failed"><b>上次送达失败:</b> live adapter send to weixin:o9cq80xwj7WcVzumQngYgah7nnlc@im.wechat timed out before the coroutine was dispatched; delivery error: Weixin send failed: iLink sendmessage rate limited: ret=-2 errcode=Non</div>
+    <div class="runs"><details><summary><code>2026-10-19_21-15-29</code> </summary><div class="run-body"><p>🇺🇸 美股趋势动量 | 2026-10-16
+策略: MA50入场 + 63日动量 &gt; 0, 前3只, 跌破MA50卖出
+🟢 卖出 SNOW
+   买入 271.87 → 卖出 306.84
+   盈亏 +4231.37 (+12.86%)
+   原因: 跌破MA50
+🔴 卖出 MRVL
+   买入 245.28 → 卖出 227.83
+   盈亏 -2285.95 (-7.11%)
+   原因: 跌破MA50
+🟢 买入 META @ $709.33 × 46股 ($32,629)
+   MA50溢价 +8.3% | 63日动量 +9.8%
+🟢 买入 AAPL @ $343.46 × 96股 ($32,972)
+   MA50溢价 +5.5% | 63日动量 +5.2%</p>
+<p>📊 当前持仓 (3只):
+   🟢 PLTR   152股 | 成本 $175.89 | 现价 $186.03 | +5.76%
+   🔴 META   46股 | 成本 $709.33 | 现价 $709.33 | +0.00%
+   🔴 AAPL   96股 | 成本 $343.46 | 现价 $343.46 | +0.00%</p>
+<p>💰 现金: $1,556
+📈 总资产: $95,434 | 累计: -4.57%</p>
+<p>────────────────
+📋 今日操作一览
+   🔴 卖出 SNOW   @ $306.84 | 🟢 +4231.37 (+12.86%) | 理由: 收盘价跌破MA50
+   🔴 卖出 MRVL   @ $227.83 | 🔴 -2285.95 (-7.11%) | 理由: 收盘价跌破MA50
+   🟢 买入 META   @ $709.33 × 46股 ($32,629) | 理由: MA50溢价+8.3%, 63日动量+9.8%
+   🟢 买入 AAPL   @ $343.46 × 96股 ($32,972) | 理由: MA50溢价+5.5%, 63日动量+5.2%</p></div></details><details><summary><code>2026-10-16_21-09-30</code> </summary><div class="run-body"><p>🇺🇸 美股趋势动量 | 2026-10-15
 策略: MA50入场 + 63日动量 &gt; 0, 前3只, 跌破MA50卖出</p>
 <p>📊 当前持仓 (3只):
    🟢 SNOW   121股 | 成本 $271.87 | 现价 $335.07 | +23.25%
@@ -147,14 +172,7 @@
    🟢 ANET   165股 | 成本 $180.35 | 现价 $204.92 | +13.62%
    🟢 PLTR   152股 | 成本 $175.89 | 现价 $187.48 | +6.59%</p>
 <p>💰 现金: $71
-📈 总资产: $102,083 | 累计: +2.08%</p></div></details><details><summary><code>2026-09-28_21-13-12</code> </summary><div class="run-body"><p>🇺🇸 美股趋势动量 | 2026-09-25
-策略: MA50入场 + 63日动量 &gt; 0, 前3只, 跌破MA50卖出</p>
-<p>📊 当前持仓 (3只):
-   🟢 SNOW   121股 | 成本 $271.87 | 现价 $335.94 | +23.57%
-   🟢 ANET   165股 | 成本 $180.35 | 现价 $206.55 | +14.53%
-   🟢 PLTR   152股 | 成本 $175.89 | 现价 $189.67 | +7.83%</p>
-<p>💰 现金: $71
-📈 总资产: $103,631 | 累计: +3.63%</p></div></details></div>
+📈 总资产: $102,083 | 累计: +2.08%</p></div></details></div>
   </div>
 </details>
 <details class="job" open>
@@ -167,7 +185,21 @@
   </summary>
   <div class="job-detail">
     <div class="err" title="live adapter send failed: iLink sendmessage rate limited: ret=-2 errcode=None errmsg=prepare failed; live adapter delivery to weixin:o9cq80xwj7WcVzumQngYgah7nnlc@im.wechat failed: iLink sendmessage rate limited: ret=-2 errcode=None errmsg=prepare failed; delivery error: Weixin send failed: iLink sendmessage rate limited: ret=-2 errcode=None errmsg=prepare failed"><b>上次送达失败:</b> live adapter send failed: iLink sendmessage rate limited: ret=-2 errcode=None errmsg=prepare failed; live adapter delivery to weixin:o9cq80xwj7WcVzumQngYgah7nnlc@im.wechat failed: iLink sendmessage ra</div>
-    <div class="runs"><details><summary><code>2026-10-19_08-30-24</code> </summary><div class="run-body"><p>📰 美股每日情报 | 10-19 08:30
+    <div class="runs"><details><summary><code>2026-10-20_09-08-32</code> </summary><div class="run-body"><p>📰 美股每日情报 | 10-20 09:08
+🦈 大空头/做空:
+  • [10-19] Wall Street Is Not Buying "AI." It Is Buying the Fortress. - Money Morning — Money Morning
+  • [10-19] NVIDIA Trading Strategies on Bitget: 7 Ways to Invest ( A Beginner's Guide) - Bitget — Bitget
+  • [10-19] Billionaire CEO: AI Is “The Biggest Bubble Of Our Lifetime,” But Investors Should Keep Buying During The Melt-Up - 24/7 Wall St. — 24/7 Wall St.
+  • [10-19] Do some exercise, don't gamble, and never buy a boat: Michael Burry shared his 10 top life lessons - Business Insider — Business Insider</p>
+<p>🏦 机构/对冲基金:
+  • [10-19] Hedge funds cut technology stock positions at fastest pace in a decade as AI trade unwinds - Business Upturn — Business Upturn
+  • [10-19] [Opening Market] KOSPI Opens Down 3.17% Amid U.S. Tech Shock - Businesskorea — Businesskorea
+  • [10-19] Seoul shares narrow losses late Monday morning on institutional buying - The Korea Times — The Korea Times</p>
+<p>📰 市场/宏观:
+  • [10-20] Bank of Korea Pauses Hikes, Signals More Increases - 조선일보 — 조선일보
+  • [10-19] AI Capex And Earnings: What Happens When Growth Slows - Real Investment Advice — Real Investment Advice
+  • [10-19] BofA Research Report Analysis: AI Capital Expenditure Has Not Yet Peaked, Monetization Determines Returns - 深潮TechFlow — 深潮TechFlow
+  • [10-19] Will the Fed Raise Rates This Month? Here's What Markets Say. - Yahoo Finance — Yahoo Finance</p></div></details><details><summary><code>2026-10-19_08-30-24</code> </summary><div class="run-body"><p>📰 美股每日情报 | 10-19 08:30
 🦈 大空头/做空:
   • [10-18] Hedge Fund Exits Spark 26 Trillion Won Foreign Sell-Off in Korea - 조선일보 — 조선일보
   • [10-18] Hedge funds slide as AI bets unwind worldwide - Business Day — Business Day
@@ -352,15 +384,7 @@
   • [10-05] China's YMTC raises chip prices as it braces for three more years of memory shortages - TweakTown — TweakTown
   • [10-05] Gold prices rise after weak September jobs report dims Fed rate hike - qz.com — qz.com
   • [10-05] Fed rate hike odds plummet after September jobs miss - Kalshi News — Kalshi News
-  • [10-05] Gold steady as stronger dollar and high yields offset waning Fed hike expectations - Reuters — Reuters</p></div></details><details><summary><code>2026-10-05_08-30-44</code> </summary><div class="run-body"><p>📰 美股每日情报 | 10-05 08:30
-🦈 大空头/做空:
-  • [10-04] Michael Burry Thinks the AI Bubble Will Burst Sooner Than Later, Including Big Drops in Micron and Nebius by Mid-2027 - The Globe and Mail — The Globe and Mail
-  • [10-03] ‘Big Short’ Michael Burry Warns Of Dollar ‘Train Wreck’ — Bets On Fine Wine Against AI, Quantum And US Debt Risks - Stocktwits — Stocktwits</p>
-<p>📰 市场/宏观:
-  • [10-04] Tesla CEO Elon Musk Cuts AI Chip Memory Amid Shortage - 조선일보 — 조선일보
-  • [10-04] Dollar Falls After Weak U.S. Jobs Data, Boosting Swiss Franc Further - WSJ — WSJ
-  • [10-04] Albanese’s ratings slump in Redbridge poll after interest rate hike - The Conversation — The Conversation
-  • [10-04] Opinion: Fed minutes coming this week could give markets important clues about future rate hikes - MarketWatch — MarketWatch</p></div></details></div>
+  • [10-05] Gold steady as stronger dollar and high yields offset waning Fed hike expectations - Reuters — Reuters</p></div></details></div>
   </div>
 </details>
 <details class="job" open>
@@ -369,18 +393,11 @@
     <span class="job-meta">50 14 * * 1-5</span>
     <span class="badge" style="background:#16a34a">ok</span>
     ❌
-    <span class="job-last">2026-10-16T19:06</span>
+    <span class="job-last">2026-10-19T15:23</span>
   </summary>
   <div class="job-detail">
-    <div class="err" title="live adapter send to weixin:o9cq80xwj7WcVzumQngYgah7nnlc@im.wechat timed out before the coroutine was dispatched; delivery error: Weixin send failed: "><b>上次送达失败:</b> live adapter send to weixin:o9cq80xwj7WcVzumQngYgah7nnlc@im.wechat timed out before the coroutine was dispatched; delivery error: Weixin send failed: </div>
-    <div class="runs"><details><summary><code>2026-10-16_16-04-41</code> </summary><div class="run-body"><p>CRON_SILENT</p></div></details><details><summary><code>2026-10-15_14-57-24</code> </summary><div class="run-body"><p>CRON_SILENT</p></div></details><details><summary><code>2026-10-14_14-53-59</code> </summary><div class="run-body"><p>CRON_SILENT</p></div></details><details><summary><code>2026-10-13_14-51-27</code> </summary><div class="run-body"><p>CRON_SILENT</p></div></details><details><summary><code>2026-10-12_14-57-52</code> </summary><div class="run-body"><p>CRON_SILENT</p></div></details><details><summary><code>2026-10-09_15-38-11</code> </summary><div class="run-body"><p>CRON_SILENT</p></div></details><details><summary><code>2026-10-08_14-50-52</code> </summary><div class="run-body"><p>CRON_SILENT</p></div></details><details><summary><code>2026-10-07_15-05-54</code> </summary><div class="run-body"><p>CRON_SILENT</p></div></details><details><summary><code>2026-10-06_14-50-16</code> </summary><div class="run-body"><p>CRON_SILENT</p></div></details><details><summary><code>2026-10-05_14-50-49</code> </summary><div class="run-body"><p>CRON_SILENT</p></div></details><details><summary><code>2026-10-02_15-17-28</code> </summary><div class="run-body"><p>CRON_SILENT</p></div></details><details><summary><code>2026-10-01_14-50-07</code> </summary><div class="run-body"><p>CRON_SILENT</p></div></details><details><summary><code>2026-09-30_14-50-43</code> </summary><div class="run-body"><p>CRON_SILENT</p></div></details><details><summary><code>2026-09-29_14-52-04</code> </summary><div class="run-body"><p>CRON_SILENT</p></div></details><details><summary><code>2026-09-28_15-06-17</code> </summary><div class="run-body"><p>login success!
-logout success!
-📉 A股模拟卖出 | 2026-09-28
-🔴 卖出 沪电股份 002463
-   买入 126.06 → 卖出 117.20
-   盈亏 -19827.19 (-7.03%)
-   原因: 动量止损 跌破MA50 (119.21)</p>
-<p>📊 空仓 | 💰 现金: ¥844,987</p></div></details></div>
+    <div class="err" title="live adapter send failed: iLink sendmessage rate limited: ret=-2 errcode=None errmsg=prepare failed; live adapter delivery to weixin:o9cq80xwj7WcVzumQngYgah7nnlc@im.wechat failed: iLink sendmessage rate limited: ret=-2 errcode=None errmsg=prepare failed; delivery error: Weixin send failed: "><b>上次送达失败:</b> live adapter send failed: iLink sendmessage rate limited: ret=-2 errcode=None errmsg=prepare failed; live adapter delivery to weixin:o9cq80xwj7WcVzumQngYgah7nnlc@im.wechat failed: iLink sendmessage ra</div>
+    <div class="runs"><details><summary><code>2026-10-19_15-05-08</code> </summary><div class="run-body"><p>CRON_SILENT</p></div></details><details><summary><code>2026-10-16_16-04-41</code> </summary><div class="run-body"><p>CRON_SILENT</p></div></details><details><summary><code>2026-10-15_14-57-24</code> </summary><div class="run-body"><p>CRON_SILENT</p></div></details><details><summary><code>2026-10-14_14-53-59</code> </summary><div class="run-body"><p>CRON_SILENT</p></div></details><details><summary><code>2026-10-13_14-51-27</code> </summary><div class="run-body"><p>CRON_SILENT</p></div></details><details><summary><code>2026-10-12_14-57-52</code> </summary><div class="run-body"><p>CRON_SILENT</p></div></details><details><summary><code>2026-10-09_15-38-11</code> </summary><div class="run-body"><p>CRON_SILENT</p></div></details><details><summary><code>2026-10-08_14-50-52</code> </summary><div class="run-body"><p>CRON_SILENT</p></div></details><details><summary><code>2026-10-07_15-05-54</code> </summary><div class="run-body"><p>CRON_SILENT</p></div></details><details><summary><code>2026-10-06_14-50-16</code> </summary><div class="run-body"><p>CRON_SILENT</p></div></details><details><summary><code>2026-10-05_14-50-49</code> </summary><div class="run-body"><p>CRON_SILENT</p></div></details><details><summary><code>2026-10-02_15-17-28</code> </summary><div class="run-body"><p>CRON_SILENT</p></div></details><details><summary><code>2026-10-01_14-50-07</code> </summary><div class="run-body"><p>CRON_SILENT</p></div></details><details><summary><code>2026-09-30_14-50-43</code> </summary><div class="run-body"><p>CRON_SILENT</p></div></details><details><summary><code>2026-09-29_14-52-04</code> </summary><div class="run-body"><p>CRON_SILENT</p></div></details></div>
   </div>
 </details>
 <details class="job" open>
