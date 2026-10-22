@@ -27,7 +27,7 @@
 </head>
 <body>
 <h1>📊 Cron 任务执行报告</h1>
-<div class="sub">生成时间: 2026-10-22 10:29:22 | ✅=送达成功 ❌=微信送达失败 | 点击任务展开每次执行详情</div>
+<div class="sub">生成时间: 2026-10-22 12:49:02 | ✅=送达成功 ❌=微信送达失败 | 点击任务展开每次执行详情</div>
 
 <details class="job" open>
   <summary>
@@ -825,13 +825,20 @@ logout success!
   <summary>
     <span class="job-name">Serenity X 帖子抓取 08:00</span>
     <span class="job-meta">0 8 * * 1-5</span>
-    <span class="badge" style="background:#16a34a">ok</span>
+    <span class="badge" style="background:#dc2626">error</span>
     ❌
-    <span class="job-last">2026-10-21T18:03</span>
+    <span class="job-last">2026-10-22T12:48</span>
   </summary>
   <div class="job-detail">
     <div class="err" title="live adapter send failed: iLink sendmessage rate limited: ret=-2 errcode=None errmsg=prepare failed; live adapter delivery to weixin:o9cq80xwj7WcVzumQngYgah7nnlc@im.wechat failed: iLink sendmessage rate limited: ret=-2 errcode=None errmsg=prepare failed; delivery error: Weixin send failed: iLink sendmessage rate limited: ret=-2 errcode=None errmsg=prepare failed"><b>上次送达失败:</b> live adapter send failed: iLink sendmessage rate limited: ret=-2 errcode=None errmsg=prepare failed; live adapter delivery to weixin:o9cq80xwj7WcVzumQngYgah7nnlc@im.wechat failed: iLink sendmessage ra</div>
-    <div class="runs"><details><summary><code>2026-10-21_16-34-09</code> </summary><div class="run-body"><p>{
+    <div class="runs"><details><summary><code>2026-10-22_12-47-45</code> <span class="badge" style="background:#dc2626">script failed</span></summary><div class="run-body"><h1>Cron Job: Serenity X 帖子抓取 08:00</h1>
+<p><strong>Job ID:</strong> bf4a44dcabf7
+<strong>Run Time:</strong> 2026-10-22 12:47:45
+<strong>Mode:</strong> no_agent (script)
+<strong>Status:</strong> script failed</p>
+<p>Script exited with code 1
+stdout:
+No tweets extracted. Is Chrome running and logged into x.com?</p></div></details><details><summary><code>2026-10-21_16-34-09</code> </summary><div class="run-body"><p>{
   "source": "chrome_dom",
   "total_fetched": 5,
   "new_added": 3,
@@ -1096,26 +1103,6 @@ No tweets extracted. Is Chrome running and logged into x.com?</p></div></details
       "source_url": "https://x.com/aleabitoreddit/status/2105709782854435274"
     }
   ]
-}</p></div></details><details><summary><code>2026-10-01_08-00-19</code> </summary><div class="run-body"><p>{
-  "source": "chrome_dom",
-  "total_fetched": 4,
-  "new_added": 2,
-  "posts": [
-    {
-      "id": "2105397070681248021",
-      "text": "$GOOGL\n Gemini 4 Argon benchmarks got released.\n\nAgainst GPT-6 Astra + Anthropic Fable 5.1 / Opus 5.5.\n\nStill coughing nonstop, so will comment on \n$MU\n / \n$JBL\n  earnings later. \n\nI've always thought Google's internal models were stellar, but anecdotally, they seem to get hard nerfed",
-      "created_at_beijing": "2026-10-01 04:39:12 +0800",
-      "beijing_date": "2026-10-01",
-      "source_url": "https://x.com/aleabitoreddit/status/2105397070681248021"
-    },
-    {
-      "id": "2105151002760679706",
-      "text": "Bro, \n$AMZN\n semi ETF portfolio is probably going to end up more compelling than what \n$NVDA\n owns... \n\nToday Amazon signed a $49.8M private placement into PCB maker Gold Circuit Electronics (2368). So now Amazon has ownership/warrants in:\n\n- \n$AAOI\n \n- Alchip\n- \n$MRVL\n (Celestial)\n-",
-      "created_at_beijing": "2026-09-30 12:21:25 +0800",
-      "beijing_date": "2026-09-30",
-      "source_url": "https://x.com/aleabitoreddit/status/2105151002760679706"
-    }
-  ]
 }</p></div></details></div>
   </div>
 </details>
@@ -1124,12 +1111,15 @@ No tweets extracted. Is Chrome running and logged into x.com?</p></div></details
     <span class="job-name">Serenity X to A-share Weixin 08:50</span>
     <span class="job-meta">50 8 * * 1-5</span>
     <span class="badge" style="background:#16a34a">ok</span>
-    ❌
-    <span class="job-last">2026-10-21T12:29</span>
+    ✅
+    <span class="job-last">2026-10-22T12:04</span>
   </summary>
   <div class="job-detail">
-    <div class="err" title="live adapter send to weixin:o9cq80xwj7WcVzumQngYgah7nnlc@im.wechat timed out before the coroutine was dispatched; delivery error: Weixin send failed: Cannot connect to host ilinkai.weixin.qq.com:443 ssl:default [nodename nor servname provided, or not known]"><b>上次送达失败:</b> live adapter send to weixin:o9cq80xwj7WcVzumQngYgah7nnlc@im.wechat timed out before the coroutine was dispatched; delivery error: Weixin send failed: Cannot connect to host ilinkai.weixin.qq.com:443 s</div>
-    <div class="runs"><details><summary><code>2026-10-21_10-27-19</code> </summary><div class="run-body"><p>📊 Serenity A股评分</p>
+    
+    <div class="runs"><details><summary><code>2026-10-22_12-04-07</code> </summary><div class="run-body"><p>📊 Serenity A股评分</p>
+<p>2026-10-22
+候选: 0只</p>
+<p>（今日大V帖子未命中策略主题，无买入信号）</p></div></details><details><summary><code>2026-10-21_10-27-19</code> </summary><div class="run-body"><p>📊 Serenity A股评分</p>
 <p>2026-10-21
 候选: 0只</p>
 <p>（今日大V帖子未命中策略主题，无买入信号）</p></div></details><details><summary><code>2026-10-20_09-12-55</code> </summary><div class="run-body"><p>📊 Serenity A股评分</p>
@@ -1327,23 +1317,7 @@ $LI
 <strong>Run Time:</strong> 2026-10-02 15:14:15
 <strong>Mode:</strong> no_agent (script)
 <strong>Status:</strong> script failed</p>
-<p>Script timed out after 3600s: /Users/wangjing/.hermes/scripts/serenity_score_weixin.py</p></div></details><details><summary><code>2026-10-01_08-50-35</code> </summary><div class="run-body"><p>📊 Serenity A股评分</p>
-<p>🆕 来源帖子:
-  • AAOI, AMZN, MRVL, NVDA  Bro, 
-$AMZN
- semi ETF portfolio is probably going to end up more compelling than
-  • GOOGL, JBL, MU  $GOOGL
- Gemini 4 Argon benchmarks got released.</p>
-<p>Against GPT-6 Astra + Anthropic</p>
-<p>2026-10-01信号 → 2026-10-01交易
-候选: 16只</p>
-<p>Top 5:
-1. 300308 中际旭创 5.33分 (AAOI,AMZN,NVDA +4.0%)
-2. 300502 新易盛 5.04分 (AAOI,AMZN,NVDA +4.0%)
-3. 601138 工业富联 4.78分 (AAOI,AMZN,NVDA +4.0%)
-4. 002371 北方华创 4.0分 (MU,NVDA +4.0%)
-5. 688008 澜起科技 3.6分 (MU,NVDA +4.0%)</p>
-<p>排名变化: 688041 9→8↑, 002050 8→9↓</p></div></details></div>
+<p>Script timed out after 3600s: /Users/wangjing/.hermes/scripts/serenity_score_weixin.py</p></div></details></div>
   </div>
 </details>
 <details class="job" open>
@@ -1351,12 +1325,34 @@ $AMZN
     <span class="job-name">美股数据下载-07:00</span>
     <span class="job-meta">0 7 * * 1-5</span>
     <span class="badge" style="background:#16a34a">ok</span>
-    ❌
-    <span class="job-last">2026-10-21T13:30</span>
+    ✅
+    <span class="job-last">2026-10-22T10:29</span>
   </summary>
   <div class="job-detail">
-    <div class="err" title="live adapter send to weixin:o9cq80xwj7WcVzumQngYgah7nnlc@im.wechat timed out before the coroutine was dispatched; delivery error: Weixin send failed: "><b>上次送达失败:</b> live adapter send to weixin:o9cq80xwj7WcVzumQngYgah7nnlc@im.wechat timed out before the coroutine was dispatched; delivery error: Weixin send failed: </div>
-    <div class="runs"><details><summary><code>2026-10-21_09-50-22</code> </summary><div class="run-body"><p>AAOI: +1 rows
+    
+    <div class="runs"><details><summary><code>2026-10-22_10-29-27</code> </summary><div class="run-body"><p>AAOI: +1 rows
+  AAPL: +1 rows
+  AMD: +2 rows
+  AMZN: +2 rows
+  ASML: +2 rows
+  ASTS: +2 rows
+  DASH: +2 rows
+  HIMX: +2 rows
+  JD: +2 rows
+  LITE: +2 rows
+  MELI: +2 rows
+  META: +2 rows
+  MSFT: +2 rows
+  MU: +2 rows
+  NBIS: +2 rows
+  NVDA: +2 rows
+  PL: +2 rows
+  RKLB: +2 rows
+  TSLA: +2 rows
+  TSM: +2 rows
+  UBER: +2 rows</p>
+<p>Done. Updated=21, Skipped=2, Failed=0
+美股数据已下载,收到了吗?</p></div></details><details><summary><code>2026-10-21_09-50-22</code> </summary><div class="run-body"><p>AAOI: +1 rows
   AAPL: +1 rows</p>
 <p>Done. Updated=2, Skipped=21, Failed=0
 美股数据已下载,收到了吗?</p></div></details><details><summary><code>2026-10-20_09-11-16</code> </summary><div class="run-body"><p>Done. Updated=22, Skipped=1, Failed=0
@@ -1569,29 +1565,6 @@ $AMZN
   UBER: +2 rows</p>
 <p>Done. Updated=22, Skipped=1, Failed=0
 美股数据已下载,收到了吗?</p></div></details><details><summary><code>2026-10-02_08-14-21</code> </summary><div class="run-body"><p>AAOI: +1 rows
-  AAPL: +1 rows
-  AMD: +1 rows
-  AMZN: +1 rows
-  ASML: +1 rows
-  ASTS: +1 rows
-  AVGO: +1 rows
-  DASH: +1 rows
-  HIMX: +1 rows
-  JD: +1 rows
-  LITE: +1 rows
-  MELI: +1 rows
-  META: +1 rows
-  MSFT: +1 rows
-  MU: +1 rows
-  NBIS: +1 rows
-  NVDA: +1 rows
-  PL: +1 rows
-  RKLB: +1 rows
-  TSLA: +1 rows
-  TSM: +1 rows
-  UBER: +1 rows</p>
-<p>Done. Updated=22, Skipped=1, Failed=0
-美股数据已下载,收到了吗?</p></div></details><details><summary><code>2026-10-01_07-01-10</code> </summary><div class="run-body"><p>AAOI: +1 rows
   AAPL: +1 rows
   AMD: +1 rows
   AMZN: +1 rows
