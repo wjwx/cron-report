@@ -27,7 +27,7 @@
 </head>
 <body>
 <h1>📊 Cron 任务执行报告</h1>
-<div class="sub">生成时间: 2026-10-23 12:03:44 | ✅=送达成功 ❌=微信送达失败 | 点击任务展开每次执行详情</div>
+<div class="sub">生成时间: 2026-10-23 17:44:37 | ✅=送达成功 ❌=微信送达失败 | 点击任务展开每次执行详情</div>
 
 <details class="job" open>
   <summary>
@@ -1073,12 +1073,15 @@ No tweets extracted. Is Chrome running and logged into x.com?</p></div></details
     <span class="job-name">Serenity X to A-share Weixin 08:50</span>
     <span class="job-meta">50 8 * * 1-5</span>
     <span class="badge" style="background:#16a34a">ok</span>
-    ✅
-    <span class="job-last">2026-10-22T12:04</span>
+    ❌
+    <span class="job-last">2026-10-23T17:44</span>
   </summary>
   <div class="job-detail">
-    
-    <div class="runs"><details><summary><code>2026-10-22_12-04-07</code> </summary><div class="run-body"><p>📊 Serenity A股评分</p>
+    <div class="err" title="live adapter send to weixin:o9cq80xwj7WcVzumQngYgah7nnlc@im.wechat timed out before the coroutine was dispatched; delivery error: Weixin send failed: iLink sendmessage rate limited: ret=-2 errcode=None errmsg=prepare failed"><b>上次送达失败:</b> live adapter send to weixin:o9cq80xwj7WcVzumQngYgah7nnlc@im.wechat timed out before the coroutine was dispatched; delivery error: Weixin send failed: iLink sendmessage rate limited: ret=-2 errcode=Non</div>
+    <div class="runs"><details><summary><code>2026-10-23_14-40-53</code> </summary><div class="run-body"><p>📊 Serenity A股评分</p>
+<p>2026-10-23
+候选: 0只</p>
+<p>（今日大V帖子未命中策略主题，无买入信号）</p></div></details><details><summary><code>2026-10-22_12-04-07</code> </summary><div class="run-body"><p>📊 Serenity A股评分</p>
 <p>2026-10-22
 候选: 0只</p>
 <p>（今日大V帖子未命中策略主题，无买入信号）</p></div></details><details><summary><code>2026-10-21_10-27-19</code> </summary><div class="run-body"><p>📊 Serenity A股评分</p>
@@ -1274,12 +1277,7 @@ $LI
 3. 601138 工业富联 9.67分 (AAOI,AMZN,LITE,NVDA +11.6%)
 4. 002050 三花智控 3.97分 (AMZN +1.9%)
 5. 002371 北方华创 3.96分 (MU,NVDA +2.9%)</p>
-<p>排名变化: 无</p></div></details><details><summary><code>2026-10-02_15-14-15</code> <span class="badge" style="background:#dc2626">script failed</span></summary><div class="run-body"><h1>Cron Job: Serenity X to A-share Weixin 08:50</h1>
-<p><strong>Job ID:</strong> c2d35a1cd9d3
-<strong>Run Time:</strong> 2026-10-02 15:14:15
-<strong>Mode:</strong> no_agent (script)
-<strong>Status:</strong> script failed</p>
-<p>Script timed out after 3600s: /Users/wangjing/.hermes/scripts/serenity_score_weixin.py</p></div></details></div>
+<p>排名变化: 无</p></div></details></div>
   </div>
 </details>
 <details class="job" open>
@@ -1287,12 +1285,28 @@ $LI
     <span class="job-name">美股数据下载-07:00</span>
     <span class="job-meta">0 7 * * 1-5</span>
     <span class="badge" style="background:#16a34a">ok</span>
-    ✅
-    <span class="job-last">2026-10-22T10:29</span>
+    ❌
+    <span class="job-last">2026-10-23T13:40</span>
   </summary>
   <div class="job-detail">
-    
-    <div class="runs"><details><summary><code>2026-10-22_10-29-27</code> </summary><div class="run-body"><p>AAOI: +1 rows
+    <div class="err" title="live adapter send failed: iLink sendmessage rate limited: ret=-2 errcode=None errmsg=prepare failed; live adapter delivery to weixin:o9cq80xwj7WcVzumQngYgah7nnlc@im.wechat failed: iLink sendmessage rate limited: ret=-2 errcode=None errmsg=prepare failed; delivery error: Weixin send failed: iLink sendmessage rate limited: ret=-2 errcode=None errmsg=prepare failed"><b>上次送达失败:</b> live adapter send failed: iLink sendmessage rate limited: ret=-2 errcode=None errmsg=prepare failed; live adapter delivery to weixin:o9cq80xwj7WcVzumQngYgah7nnlc@im.wechat failed: iLink sendmessage ra</div>
+    <div class="runs"><details><summary><code>2026-10-23_12-03-48</code> </summary><div class="run-body"><p>AAPL: +1 rows
+  AMD: +1 rows
+  AMZN: +1 rows
+  ASTS: +1 rows
+  AVGO: +3 rows
+  JD: +1 rows
+  LITE: +1 rows
+  MSFT: +1 rows
+  MU: +1 rows
+  NBIS: +1 rows
+  NVDA: +1 rows
+  PL: +1 rows
+  TSLA: +1 rows
+  TSM: +1 rows
+  UBER: +1 rows</p>
+<p>Done. Updated=19, Skipped=4, Failed=0
+美股数据已下载,收到了吗?</p></div></details><details><summary><code>2026-10-22_10-29-27</code> </summary><div class="run-body"><p>AAOI: +1 rows
   AAPL: +1 rows
   AMD: +2 rows
   AMZN: +2 rows
@@ -1525,29 +1539,6 @@ $LI
   TSLA: +2 rows
   TSM: +2 rows
   UBER: +2 rows</p>
-<p>Done. Updated=22, Skipped=1, Failed=0
-美股数据已下载,收到了吗?</p></div></details><details><summary><code>2026-10-02_08-14-21</code> </summary><div class="run-body"><p>AAOI: +1 rows
-  AAPL: +1 rows
-  AMD: +1 rows
-  AMZN: +1 rows
-  ASML: +1 rows
-  ASTS: +1 rows
-  AVGO: +1 rows
-  DASH: +1 rows
-  HIMX: +1 rows
-  JD: +1 rows
-  LITE: +1 rows
-  MELI: +1 rows
-  META: +1 rows
-  MSFT: +1 rows
-  MU: +1 rows
-  NBIS: +1 rows
-  NVDA: +1 rows
-  PL: +1 rows
-  RKLB: +1 rows
-  TSLA: +1 rows
-  TSM: +1 rows
-  UBER: +1 rows</p>
 <p>Done. Updated=22, Skipped=1, Failed=0
 美股数据已下载,收到了吗?</p></div></details></div>
   </div>
