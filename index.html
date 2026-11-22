@@ -27,19 +27,37 @@
 </head>
 <body>
 <h1>📊 Cron 任务执行报告</h1>
-<div class="sub">生成时间: 2026-11-20 17:58:23 | ✅=送达成功 ❌=微信送达失败 | 点击任务展开每次执行详情</div>
+<div class="sub">生成时间: 2026-11-23 07:00:43 | ✅=送达成功 ❌=微信送达失败 | 点击任务展开每次执行详情</div>
 
 <details class="job" open>
   <summary>
     <span class="job-name">美股趋势动量-21:00信号</span>
     <span class="job-meta">0 21 * * 1-5</span>
     <span class="badge" style="background:#16a34a">ok</span>
-    ✅
-    <span class="job-last">2026-11-19T21:11</span>
+    ❌
+    <span class="job-last">2026-11-21T01:17</span>
   </summary>
   <div class="job-detail">
-    
-    <div class="runs"><details><summary><code>2026-11-19_21-11-39</code> </summary><div class="run-body"><p>🇺🇸 美股趋势动量 | 2026-11-18
+    <div class="err" title="live adapter send failed: weixin delivery failed; live adapter delivery to weixin:o9cq80xwj7WcVzumQngYgah7nnlc@im.wechat failed: weixin delivery failed; delivery error: Weixin send failed: "><b>上次送达失败:</b> live adapter send failed: weixin delivery failed; live adapter delivery to weixin:o9cq80xwj7WcVzumQngYgah7nnlc@im.wechat failed: weixin delivery failed; delivery error: Weixin send failed: </div>
+    <div class="runs"><details><summary><code>2026-11-20_22-14-22</code> </summary><div class="run-body"><p>🇺🇸 美股趋势动量 | 2026-11-19
+策略: MA50+63日动量入场, 前3只 | 连续2日破MA50卖出 | 10日冷静期 | QQQ&lt;MA200不开新仓</p>
+<p>📊 当前持仓 (3只):
+   🟢 AAPL   95股 | 成本 $344.17 | 现价 $349.21 | +1.46%
+   🔴 TSLA   87股 | 成本 $378.05 | 现价 $374.41 | -0.96% ⚠️1日破MA50
+   🔴 AMZN   70股 | 成本 $270.87 | 现价 $257.37 | -4.98%</p>
+<p>💰 现金: $58
+📈 总资产: $83,822 | 累计: -16.18%
+🧭 🛑 不开新仓 | QQQ 659.51 vs MA200 681.80 (-3.3%)</p>
+<p>🌡 宏观快照 | 11-20
+QQQ 645.04 ↓ MA200 683.33 (-5.6%, 均线斜率+0.93%)
+VIX 30.34 (vs 20日均 21.42, +41.6%)
+VXN 36.48 (vs 20日均 30.16) ← QQQ对标
+DXY 103.70 ↑ MA200 100.03
+背离 VXN-VIX +6.1 (历史78分位)
+📐 恐慌窗口: VIX口径 1/3 | VXN口径 1/3 | 双轨齐高 1/1
+📊 同状态历史(6个月 均值/中位/胜率): +5.9%/+10.4%/胜率64% | 1年 +19.8%/78%
+   状态: QQQ下MA200+美元强
+🔥 恐慌窗口已触发, 历史6M胜率88-95%</p></div></details><details><summary><code>2026-11-19_21-11-39</code> </summary><div class="run-body"><p>🇺🇸 美股趋势动量 | 2026-11-18
 策略: MA50+63日动量入场, 前3只 | 连续2日破MA50卖出 | 10日冷静期 | QQQ&lt;MA200不开新仓</p>
 <p>📊 当前持仓 (3只):
    🟢 AAPL   95股 | 成本 $344.17 | 现价 $352.45 | +2.41%
@@ -183,14 +201,7 @@ DXY 103.68 ↑ MA200 99.99
 <p>────────────────
 📋 今日操作一览
    🔴 卖出 PLTR   @ $184.11 | 🟢 +1249.44 (+4.67%) | 理由: 收盘价跌破MA50
-   🟢 买入 TSLA   @ $399.81 × 70股 ($27,987) | 理由: MA50溢价+8.2%, 63日动量+24.1%</p></div></details><details><summary><code>2026-10-30_22-04-02</code> </summary><div class="run-body"><p>🇺🇸 美股趋势动量 | 2026-10-29
-策略: MA50入场 + 63日动量 &gt; 0, 前3只, 跌破MA50卖出</p>
-<p>📊 当前持仓 (3只):
-   🟢 PLTR   152股 | 成本 $175.89 | 现价 $196.42 | +11.67%
-   🟢 AAPL   96股 | 成本 $343.46 | 现价 $348.91 | +1.59%
-   🟢 CRWD   131股 | 成本 $237.94 | 现价 $261.15 | +9.75%</p>
-<p>💰 现金: $233
-📈 总资产: $97,795 | 累计: -2.21%</p></div></details></div>
+   🟢 买入 TSLA   @ $399.81 × 70股 ($27,987) | 理由: MA50溢价+8.2%, 63日动量+24.1%</p></div></details></div>
   </div>
 </details>
 <details class="job" open>
@@ -199,11 +210,46 @@ DXY 103.68 ↑ MA200 99.99
     <span class="job-meta">30 8 * * *</span>
     <span class="badge" style="background:#16a34a">ok</span>
     ✅
-    <span class="job-last">2026-11-20T08:40</span>
+    <span class="job-last">2026-11-22T08:47</span>
   </summary>
   <div class="job-detail">
     
-    <div class="runs"><details><summary><code>2026-11-20_08-40-03</code> </summary><div class="run-body"><p>📰 美股每日情报 | 11-20 08:40
+    <div class="runs"><details><summary><code>2026-11-22_08-47-46</code> </summary><div class="run-body"><p>📰 美股每日情报 | 11-22 08:47
+🦈 大空头/做空:
+  • [11-21] Follow the Smart Money: 4 AI Stocks Billionaire Dan Loeb Just Bought - Yahoo Finance — Yahoo Finance
+  • [11-21] Michael Burry Says ‘I Told You So’ as Wall Street Caught Off Guard by AI Selloff - 24/7 Wall St. — 24/7 Wall St.
+  • [11-21] Michael Burry Says He Tried to Warn You About Nebius. The Stock Just Crashed 16% and Is 72% Below Its Record - Yahoo Finance — Yahoo Finance
+  • [11-21] Taiwan Bans Below-Close Short Selling as Chip-Heavy Index Sheds 17.5% in Five Sessions - BigGo Finance — BigGo Finance</p>
+<p>🏦 机构/对冲基金:
+  • [11-21] The Nasdaq shed over $4 trillion in a week, and after a "Black Friday" for global stock markets, investors are beginning to anticipate a rebound in the AI-related sector following its sharp sell-off. - 富途牛牛 — 富途牛牛
+  • [11-21] 192,349 SoFi Technologies, Inc. $SOFI Shares Sold by Russell Investments Group Ltd. - MarketBeat — MarketBeat
+  • [11-21] Nokia Corporation $NOK Stock Sold by Allspring Global Investments Holdings LLC - MarketBeat — MarketBeat
+  • [11-21] FBM KLCI Heading For A Turbulent Week, May Decline To 1,534 - BusinessToday Malaysia — BusinessToday Malaysia</p>
+<p>📰 市场/宏观:
+  • [11-21] This Stock Market Selloff Could Block the Fed’s Rate Hikes - 24/7 Wall St. — 24/7 Wall St.
+  • [11-21] Fed’s Lisa Cook Warns of Larger Rate Hikes Ahead - 24/7 Wall St. — 24/7 Wall St.
+  • [11-21] Anthropic Is Now Worth More Than Bitcoin: Could Bitcoin Pass It by 2030? - 24/7 Wall St. — 24/7 Wall St.
+  • [11-21] Gold hits 14-month low on AI stock losses and Fed rate hike bets - Nation Thailand — Nation Thailand</p></div></details><details><summary><code>2026-11-21_09-00-59</code> </summary><div class="run-body"><p>📰 美股每日情报 | 11-21 09:00
+🧑💻 X大V (@aleabitoreddit):
+  • 2026-11-20 07:55 [NVDA] I'm hearing multiple things from industry executives: 1. Potential $NVDA employee exodus if Jensen doesn't come back soon. Many senior manag
+  • 2026-11-20 06:28 [AAPL,ANT] $AAPL is now developing its own AI agent offerings to compete vs. $ANT , Meta Muse, Google Gemini, and OpenAI. Given on-device inference isn
+  • 2026-11-20 02:47 [ANT,META] Wow $ANT at a $1.74T valuation… is now worth hundreds of billions more than $META . Did anyone end up investing?
+  • 2026-11-19 21:02 [COHR] That’s the signal of confidence I like to see: $COHR issues a new $2B share buyback, through open market purchases. Optical industry looks v</p>
+<p>🦈 大空头/做空:
+  • [11-20] 10 Most Overvalued AI Stocks According to Short Sellers - Insider Monkey — Insider Monkey
+  • [11-20] The Tech Selloff Could Last Weeks Before The Next Buying Opportunity - Forbes — Forbes
+  • [11-20] Aswath Damodaran Sets $140 Nvidia ‘Limit Buy’ After Jensen Huang Exit, Calls Tim Cook ‘Not A Good Fit’ Ex - Benzinga — Benzinga
+  • [11-20] Nvidia and Anthropic pick a bad week for good news - Citywire — Citywire</p>
+<p>🏦 机构/对冲基金:
+  • [11-20] Goldman Sachs' Tony Pasquariello: Is the Fed About to Get Properly Rough? - The Dark Side Of The Boom — The Dark Side Of The Boom
+  • [11-20] CoreWeave sinks 12% as tech stocks plunge (CRWV:NASDAQ) - Seeking Alpha — Seeking Alpha
+  • [11-20] Tech Stocks Crater as S&amp;P 500, Dow Enter Correction Territory - The Tech Buzz — The Tech Buzz
+  • [11-20] Dow and S&amp;P 500 Plunge Into Correction as Tech Sell-Off Deepens - Realtor.com — Realtor.com</p>
+<p>📰 市场/宏观:
+  • [11-20] Fed's Cook says rate hikes needed to lower high inflation - Reuters — Reuters
+  • [11-20] Fed Governor Lisa Cook Says Her October Dissent Reflected Inflation Fight’s Urgency - WSJ — WSJ
+  • [11-20] Fed’s Cook says September rate hike likely insufficient to curb price pressures - Investing.com — Investing.com
+  • [11-20] Fed’s Cook says monetary policy isn’t restrictive enough - investingLive — investingLive</p></div></details><details><summary><code>2026-11-20_08-40-03</code> </summary><div class="run-body"><p>📰 美股每日情报 | 11-20 08:40
 🧑💻 X大V (@aleabitoreddit):
   • 2026-11-20 07:55 [NVDA] I'm hearing multiple things from industry executives: 1. Potential $NVDA employee exodus if Jensen doesn't come back soon. Many senior manag
   • 2026-11-20 06:28 [AAPL,ANT] $AAPL is now developing its own AI agent offerings to compete vs. $ANT , Meta Muse, Google Gemini, and OpenAI. Given on-device inference isn
@@ -438,41 +484,7 @@ DXY 103.68 ↑ MA200 99.99
   • [11-07] Odds of a December Rate Hike Jump to 77% After a Blowout Jobs Report - 24/7 Wall St. — 24/7 Wall St.
   • [11-07] US Inflation Report Becomes Next Test for Fed Rate Hike After 165,000 Jobs Added in October - CryptoRank — CryptoRank
   • [11-07] U.S. October CPI Due Tuesday, December Rate-Hike Bets Approach 80% - BigGo Finance — BigGo Finance
-  • [11-07] US adds 165,000 jobs in October - The Arkansas Democrat-Gazette — The Arkansas Democrat-Gazette</p></div></details><details><summary><code>2026-11-07_08-37-40</code> </summary><div class="run-body"><p>📰 美股每日情报 | 11-07 08:37
-🦈 大空头/做空:
-  • [11-06] Betting against AI makes short-sellers $30bn - The Times — The Times
-  • [11-06] AI Stock Rout Jolts Hedge Funds; Walleye to Return Some Capital - bloomingbit — bloomingbit
-  • [11-06] Even a Broken Clock Is Right Twice a Day. Is Michael Burry Finally Right About the AI Bubble? - Yahoo Finance — Yahoo Finance
-  • [11-06] Michael Burry Sold 25% of His Chip Puts and Says He’s Still Very Bearish - 24/7 Wall St. — 24/7 Wall St.</p>
-<p>🏦 机构/对冲基金:
-  • [11-06] [Closing Market] KOSPI Barely Holds 5,000 After Tech Rout - Businesskorea — Businesskorea
-  • [11-06] ‘Brutal’ global tech sell-off spills over to hit FTSE 100 - BusinessCloud — BusinessCloud
-  • [11-06] Where Investors May Hide As Tech Sells Off With Morgan Stanley And Goldman Sachs - Simply Wall St — Simply Wall St
-  • [11-06] Retail traders dump $257 million in stocks in 5th biggest selling day since 2020 - Yahoo Finance — Yahoo Finance</p>
-<p>📰 市场/宏观:
-  • [11-06] Hyperscalers: AI Investment Will Outpace Near-Term Earnings - Morningstar — Morningstar
-  • [11-06] Alphabet is The Best Positioned Hyperscaler for This Blue Wave AI-Energy Regulation Shift - 24/7 Wall St. — 24/7 Wall St.
-  • [11-06] The Inmates Are Running the Asylum: Wall Street’s AI Capex Contradiction - Dr. Robert Castellano's Semiconductor Deep Dive Newsletter — Dr. Robert Castellano's Semiconductor Deep Dive Newsletter
-  • [11-06] Fed policymakers consider rate hike after strong jobs report - Reuters — Reuters</p></div></details><details><summary><code>2026-11-06_09-45-38</code> </summary><div class="run-body"><p>📰 美股每日情报 | 11-06 09:45
-🧑💻 X大V (@aleabitoreddit):
-  • 2026-11-05 02:36 [INTC,MU,TSM] New SEC filing discloses $INTC CEO buying $9.71M worth of Intel shares at $64.7 under his family trust. Pretty large vote of confidence afte
-  • 2026-11-05 02:16 [AMZN] Cyberoffense/defense is probably going to eat up a TON of compute and end up a continuous compute-intensive arms race. Even $AMZN CEO thinks
-  • 2026-11-05 01:40 [AAOI,NVDA,SIVE] For companies like $SIVE / $AAOI , the demand imbalance for lasers are so severe That even a 20-30% overall demand reduction from a hypothet
-  • 2026-11-05 00:20 [AAOI,AMZN,CIFR,GOOGL] Little rant, but to show you how rampant deleveraging has become: - $CIFR is worth 44% LESS than when they announced their initial $GOOGL / </p>
-<p>🦈 大空头/做空:
-  • [11-06] AI Stock Rout Jolts Hedge Funds; Walleye to Return Some Capital - bloomingbit — bloomingbit
-  • [11-05] AI free-fall triggers another major hedge fund shakeout - Investing.com — Investing.com
-  • [11-05] Michael Burry says Anthropic is 'betting its entire existence' on optimism, and he has no plans to own the stock - Business Insider — Business Insider
-  • [11-05] Anthropic Is ‘Betting Its Entire Existence On Optimism’: Michael Burry Flags Risks After AI Firm’s Updated S-1, Says Won’t Pursue IPO Shares - Stocktwits — Stocktwits</p>
-<p>🏦 机构/对冲基金:
-  • [11-05] Wall Street Trading Desks Bet on US Stock Rally After Midterms - Bloomberg.com — Bloomberg.com
-  • [11-04] Micron Technology (MU) Pulls Back Amid Broader AI Memory Sell-Off; Underweight Position Aids Relative Returns - Yahoo Finance — Yahoo Finance
-  • [11-04] Tech Bulls Divided: Tom Lee Expects 20% Rally, But Dan Ives Warns Of More Downside - Stocktwits — Stocktwits</p>
-<p>📰 市场/宏观:
-  • [11-06] The Inmates Are Running the Asylum: Wall Street’s AI Capex Contradiction - Dr. Robert Castellano's Semiconductor Deep Dive Newsletter — Dr. Robert Castellano's Semiconductor Deep Dive Newsletter
-  • [11-05] Fed's Hammack, Barkin favor gradual rate-hike path to lower inflation - Reuters — Reuters
-  • [11-05] Watch September Fed Rate Hike Was a Mistake, Miran Says - Bloomberg.com — Bloomberg.com
-  • [11-05] Bank of England raises rates for first time since 2023, warns more likely - Reuters — Reuters</p></div></details></div>
+  • [11-07] US adds 165,000 jobs in October - The Arkansas Democrat-Gazette — The Arkansas Democrat-Gazette</p></div></details></div>
   </div>
 </details>
 <details class="job" open>
@@ -481,11 +493,17 @@ DXY 103.68 ↑ MA200 99.99
     <span class="job-meta">50 14 * * 1-5</span>
     <span class="badge" style="background:#16a34a">ok</span>
     ✅
-    <span class="job-last">2026-11-19T15:02</span>
+    <span class="job-last">2026-11-20T17:58</span>
   </summary>
   <div class="job-detail">
     
-    <div class="runs"><details><summary><code>2026-11-19_15-02-11</code> </summary><div class="run-body"><p>login success!
+    <div class="runs"><details><summary><code>2026-11-20_17-58-27</code> </summary><div class="run-body"><p>login success!
+logout success!
+📉 A股模拟卖出 | 2026-11-20</p>
+<p>📊 当前持仓 (1只):
+   🟢 拓普集团     601689  6200股 | 成本 44.99 | 现价 48.11 | +6.93%</p>
+<p>💰 现金: ¥556,180
+📈 总资产: ¥854,462 | 累计: -14.55%</p></div></details><details><summary><code>2026-11-19_15-02-11</code> </summary><div class="run-body"><p>login success!
 logout success!
 📉 A股模拟卖出 | 2026-11-19</p>
 <p>📊 当前持仓 (1只):
@@ -590,7 +608,7 @@ logout success!
    🟢 埃斯顿      002747  9700股 | 成本 28.91 | 现价 29.83 | +3.18%
    🟢 绿的谐波     688017  900股 | 成本 282.00 | 现价 293.52 | +4.09%</p>
 <p>💰 现金: ¥31,578
-📈 总资产: ¥868,995 | 累计: -13.10%</p></div></details><details><summary><code>2026-11-04_14-52-05</code> </summary><div class="run-body"><p>CRON_SILENT</p></div></details><details><summary><code>2026-11-03_15-06-12</code> </summary><div class="run-body"><p>CRON_SILENT</p></div></details><details><summary><code>2026-11-02_14-51-29</code> </summary><div class="run-body"><p>CRON_SILENT</p></div></details><details><summary><code>2026-10-30_17-48-28</code> </summary><div class="run-body"><p>CRON_SILENT</p></div></details></div>
+📈 总资产: ¥868,995 | 累计: -13.10%</p></div></details><details><summary><code>2026-11-04_14-52-05</code> </summary><div class="run-body"><p>CRON_SILENT</p></div></details><details><summary><code>2026-11-03_15-06-12</code> </summary><div class="run-body"><p>CRON_SILENT</p></div></details><details><summary><code>2026-11-02_14-51-29</code> </summary><div class="run-body"><p>CRON_SILENT</p></div></details></div>
   </div>
 </details>
 <details class="job" open>
